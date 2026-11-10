@@ -1,0 +1,57 @@
+/* ==========================================================================
+   Tipografías del sistema — Aldo Iván
+   Archivos: assets/fonts/dm-sans-variable.woff2
+             assets/fonts/manrope-variable.woff2
+   Licencia: SIL Open Font License 1.1 (uso libre, también comercial y web)
+   ========================================================================== */
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../assets/fonts/dm-sans-variable.woff2") format("woff2");
+  font-weight: 100 1000;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../assets/fonts/manrope-variable.woff2") format("woff2");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Titulares, navegación y botones */
+  --font-display: "DM Sans", "Archivo", "Helvetica Neue", Arial, sans-serif;
+  /* Texto de lectura, metadatos y etiquetas */
+  --font-text: "Manrope", "Inter", "Helvetica Neue", Arial, sans-serif;
+
+  /* Interletrado, calibrado para DM Sans (no para la familia anterior) */
+  --tracking-display: -2px;         /* 80 px */
+  --tracking-display-mobile: -1px;  /* 44 px */
+  --tracking-section: -1px;         /* 48 px y 32 px */
+  --tracking-subtitle: -1px;        /* 20 px */
+}
+
+/* DM Sans tiene eje de tamaño óptico (9–40 px): el navegador lo ajusta solo.
+   En titulares grandes conviene dejarlo activo para que el trazo se afine. */
+.display,
+h1,
+h2,
+h3,
+button,
+nav a {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+}
+
+body,
+p,
+li,
+input,
+textarea,
+label {
+  font-family: var(--font-text);
+  font-optical-sizing: auto;
+}
