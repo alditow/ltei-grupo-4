@@ -240,3 +240,7 @@ Cuando cierres Word, este párrafo se añade al final de la introducción del do
 - Correcciones funcionales acotadas en la landing: menú móvil con estilo consistente, enlace de Instagram y control para pausar movimiento automático. Las miniaturas se detienen con foco de teclado. Se conserva la composición aprobada.
 - Verificación local en Chrome: imágenes y enlaces internos sin fallos; cambio de vista y zoom en ambas galerías; movimiento de miniaturas, pausa, menú a 390 px y movimiento reducido. Sin errores de JavaScript. Word renderizados y revisados visualmente. No constituye una auditoría completa de WCAG ni una prueba física en todos los dispositivos.
 - Pendiente para entrega final: piezas de cinco proyectos, explicaciones de proceso, participación y créditos.
+
+## 13 de noviembre de 2026 — Campañas
+
+Se retiró Qatar Airways. Branding conserva Quest y TipoFilicko; Campañas incorpora una franja propia con logos de Macabro y movo. La galería de MACABRO FICH usa el logotipo entregado como primera vista y cinco imágenes del proyecto. La arquitectura queda en seis proyectos; tres conservan imágenes provisionales.

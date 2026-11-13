@@ -9,7 +9,7 @@ Presentar mi trabajo como estudiante de diseño gráfico a docentes, equipos cre
 1. Portada centrada: personaje animado, nombre reactivo «aldo iván», rótulo «diseñador gráfico» y frase «me gusta entender una idea antes de darle forma», sin punto final. No lleva botones ni párrafo adicional.
 2. Contenido: índice horizontal de Branding, Campañas y Motion Graphics, con acceso a cada grupo.
 3. Sobre mí: formación, prácticas en Injerto y forma de colaborar, antes de los proyectos.
-4. Proyectos: franja de tres marcas y siete módulos agrupados en tres áreas.
+4. Proyectos: franja de dos marcas y seis módulos agrupados en tres áreas.
 5. Contacto: invitación a conversar y enlace a Instagram @alivann. El pie incluye nombre, año y regreso al inicio.
 
 La cabecera ofrece Sobre mí, Proyectos y Contacto; el nombre vuelve a la portada. En móvil, Menú muestra los mismos destinos. Pausar detiene los movimientos automáticos. La página abre al inicio salvo que se siga un enlace directo. La condición de estudiante se mantiene explícita en Sobre mí; el rótulo profesional no implica una agencia.
@@ -20,7 +20,6 @@ La cabecera ofrece Sobre mí, Proyectos y Contacto; el nombre vuelve a la portad
 
 - **Quest Diagnostics:** propuesta de rediseño de identidad visual para el laboratorio. El caso presentará diagnóstico visual, idea de cambio y aplicaciones. Debe identificarse como propuesta, sin insinuar relación oficial.
 - **TipoFilicko:** identidad visual para un evento dedicado a Louise Fili y Zuzana Licko. El caso explicará cómo el concepto se traduce en tipografía, composición y piezas.
-- **Qatar Airways:** estrategia de comunicación visual digital para la aerolínea. El caso mostrará concepto, sistema de mensajes y aplicaciones. Debe identificarse como propuesta conceptual si no fue un encargo oficial.
 
 ### Campañas
 
@@ -34,13 +33,13 @@ La cabecera ofrece Sobre mí, Proyectos y Contacto; el nombre vuelve a la portad
 
 ## Presentación e interacción
 
-Cada módulo mantiene categoría, nombre, descripción y alcance junto a una imagen dominante. En escritorio el texto ocupa la izquierda y la imagen la derecha. Una tira de miniaturas cruza el borde inferior izquierdo con un soporte opaco del color del fondo. En móvil el texto precede a la galería. La franja superior de Quest, TipoFilicko y Qatar enlaza directamente a esos módulos; no es una lista de clientes confirmados.
+Cada módulo mantiene categoría, nombre, descripción y alcance junto a una imagen dominante. En escritorio el texto ocupa la izquierda y la imagen la derecha. Una tira de miniaturas cruza el borde inferior izquierdo con un soporte opaco del color del fondo. En móvil el texto precede a la galería. La franja de Branding enlaza Quest y TipoFilicko. Antes de Campañas, otra franja con la palabra «campañas» en movimiento enlaza MACABRO FICH y movo mediante sus logos. Estas franjas son índices de proyectos, no listas de clientes.
 
-Quest contiene un logo y cinco mockups; TipoFilicko un logo y nueve mockups. Ambos empiezan con el logo completo y centrado. Las miniaturas son previsualizaciones seleccionables, no proyectos distintos. Clic, teclado, flechas y gesto horizontal permiten recorrer las vistas. La transición conserva el tamaño del marco. Los mockups llenan el marco y admiten arrastre y zoom de 1 a 2.5; el logo se conserva completo. Seleccionar otra imagen restablece el encuadre.
+Quest contiene un logo y cinco mockups; TipoFilicko un logo y nueve mockups; MACABRO FICH empieza con el logotipo entregado y muestra cinco imágenes. Los tres empiezan con el logo completo y centrado. Las miniaturas son previsualizaciones seleccionables, no proyectos distintos. Clic, teclado, flechas y gesto horizontal permiten recorrer las vistas. La transición conserva el tamaño del marco. Los mockups llenan el marco y admiten arrastre y zoom de 1 a 2.5; el logo se conserva completo. Seleccionar otra imagen restablece el encuadre.
 
 Las miniaturas avanzan automáticamente hacia la izquierda, se ralentizan con el cursor y se detienen al recibir foco de teclado o al pulsar Pausar. El trackpad permite avanzar y retroceder sin impedir el desplazamiento vertical fuera de ese gesto. El índice de áreas y la cinta branding también tienen movimiento continuo. La preferencia de movimiento reducido mantiene navegación manual y una imagen fija del personaje.
 
-Qatar, MACABRO FICH, movo, Tipognoma y Robot Dreams siguen con vistas provisionales. Sus textos no deben confundirse con piezas finales. La estructura admite añadir imágenes sin cambiar el recorrido ni reconstruir los controles.
+movo, Tipognoma y Robot Dreams siguen con vistas provisionales. Sus textos no deben confundirse con piezas finales. La estructura admite añadir imágenes sin cambiar el recorrido ni reconstruir los controles.
 
 ## Sobre mí y contacto
 
@@ -58,4 +57,4 @@ Los controles tienen nombres accesibles y foco visible. Las miniaturas informan 
 
 La página actual es una landing de una sola página. No hay enlaces a páginas de caso inexistentes. Cada futuro caso deberá explicar contexto, problema, concepto, decisiones, aplicaciones, participación y créditos, con resultados únicamente cuando sean verificables. En Robot Dreams debe especificarse la contribución individual. En propuestas académicas se mantendrá esa identificación.
 
-Antes de la entrega académica final faltan las piezas de cinco proyectos y sus explicaciones de proceso y autoría. El sistema visual ya define cómo incorporarlas, pero los mockups por sí solos no demuestran el razonamiento de diseño.
+Antes de la entrega académica final faltan las piezas de tres proyectos y sus explicaciones de proceso y autoría. El sistema visual ya define cómo incorporarlas, pero los mockups por sí solos no demuestran el razonamiento de diseño.

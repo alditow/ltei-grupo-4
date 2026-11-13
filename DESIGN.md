@@ -290,7 +290,7 @@ La imagen principal está a la derecha y la tira de miniaturas se superpone desd
 
 El cristal se reserva a la cabecera: superficie clara al 88 % y desenfoque de 16 px. Las galerías y miniaturas son sólidas. Las flechas y controles de zoom son círculos blancos con una sombra ligera de 0 2px 12px y negro al 12.5 %. Las tarjetas no llevan sombra permanente.
 
-La entrada de secciones combina 28 px de desplazamiento y un fundido de 550 ms, repetido al volver a entrar. El índice de áreas se mueve en bucle hacia la izquierda en ciclos de 20 s; al señalar una tarjeta baja al 40 % de velocidad y desenfoca las demás. La cinta «branding» se desplaza aproximadamente 75 px/s. Las miniaturas avanzan 85 px/s y bajan a 45 px/s bajo el cursor; el gesto horizontal permite acelerar o retroceder. El foco de teclado detiene la tira de miniaturas.
+La entrada de secciones combina 28 px de desplazamiento y un fundido de 550 ms, repetido al volver a entrar. El índice de áreas se mueve en bucle hacia la izquierda en ciclos de 20 s; al señalar una tarjeta baja al 40 % de velocidad y desenfoca las demás. Las cintas «branding» y «campañas» se desplazan aproximadamente 75 px/s. Las miniaturas avanzan 85 px/s y bajan a 45 px/s bajo el cursor; el gesto horizontal permite acelerar o retroceder. El foco de teclado detiene la tira de miniaturas.
 
 El cambio de imagen real usa un fundido de 380 ms, con la imagen entrante ya ajustada al marco. El zoom interpola únicamente la transformación durante 240 ms; el arrastre es directo para evitar retrasos. El control Pausar detiene las cintas, las miniaturas y sustituye el personaje por su imagen fija. La preferencia de movimiento reducido elimina los ciclos y transiciones y mantiene el acceso manual.
 
@@ -308,11 +308,11 @@ Botones generales usan 12 px, muestras de navegación flotante 16 px y controles
 
 **Índice de áreas.** Tres tarjetas enlazan Branding, Campañas y Motion Graphics. Sus copias permiten continuidad visual y se excluyen del orden de tabulación. El gesto horizontal no debe bloquear el desplazamiento vertical de la página.
 
-**Franja de marcas.** Quest, TipoFilicko y Qatar enlazan a sus módulos. Detrás circula «branding» en azul gráfico; un desvanecido del color de fondo de 25 px alrededor del grupo evita que compita con los logotipos. Los recuadros son blancos y sin contorno.
+**Franja de marcas.** Quest y TipoFilicko enlazan a sus módulos de identidad. Antes del grupo de campañas, Macabro y movo enlazan a sus proyectos. Detrás de cada grupo circula «branding» o «campañas» en azul gráfico; un desvanecido del color de fondo de 25 px alrededor del grupo evita que compita con los logotipos. Los recuadros son blancos y sin contorno.
 
-**Galería de proyecto.** Nombre, categoría, descripción y alcance acompañan una imagen grande. Quest comienza con su logotipo y tiene cinco mockups; TipoFilicko comienza con su logotipo y tiene nueve. Las miniaturas, las flechas y el gesto horizontal cambian la imagen. Los mockups admiten zoom de 1 a 2.5 en pasos de 0.25, centrado en la posición reciente del cursor, y arrastre limitado a los bordes. El logo no se amplía. Al cambiar de imagen se restablece el encuadre. Las flechas del teclado permiten desplazar el mockup cuando tiene foco.
+**Galería de proyecto.** Nombre, categoría, descripción y alcance acompañan una imagen grande. Quest comienza con su logotipo y tiene cinco mockups; TipoFilicko comienza con su logotipo y tiene nueve; MACABRO FICH comienza con el logotipo entregado y tiene cinco imágenes. Las miniaturas, las flechas y el gesto horizontal cambian la imagen. Los mockups admiten zoom de 1 a 2.5 en pasos de 0.25, centrado en la posición reciente del cursor, y arrastre limitado a los bordes. El logo no se amplía. Al cambiar de imagen se restablece el encuadre. Las flechas del teclado permiten desplazar el mockup cuando tiene foco.
 
-**Contenido pendiente.** Qatar, MACABRO FICH, movo, Tipognoma y Robot Dreams conservan vistas provisionales. No existen páginas de caso separadas ni resultados documentados en ellas. Se incorporarán piezas, explicaciones de participación y créditos cuando estén disponibles.
+**Contenido pendiente.** movo, Tipognoma y Robot Dreams conservan vistas provisionales. No existen páginas de caso separadas ni resultados documentados en ellas. Se incorporarán piezas, explicaciones de participación y créditos cuando estén disponibles.
 
 **Contacto.** Enlace a Instagram @alivann y retorno al inicio. No hay formulario de envío. Botones generales, campos, etiquetas y modal de la guía son ejemplos de reserva; no se presentan como funciones activas del portafolio.
 
