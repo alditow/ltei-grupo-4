@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Aldo Iván — Sistema de Diseño Editorial
-description: Portafolio editorial con base neutra, tipografía de carácter, contraste de escalas, acentos de cristal y temas claro y oscuro.
+description: Portafolio editorial de base clara con firma de peso progresivo, tipografía de carácter y acentos de azul y rosa.
 colors:
   primary: "#0C0C0C"
   on-primary: "#F4F4F4"
@@ -31,6 +31,18 @@ typography:
     fontWeight: 700
     lineHeight: 46px
     letterSpacing: -1px
+  hero-statement:
+    fontFamily: DM Sans
+    fontSize: 82px
+    fontWeight: 300
+    lineHeight: 87px
+    letterSpacing: -4px
+  hero-statement-mobile:
+    fontFamily: DM Sans
+    fontSize: 36px
+    fontWeight: 300
+    lineHeight: 38px
+    letterSpacing: -2px
   section:
     fontFamily: DM Sans
     fontSize: 48px
@@ -160,16 +172,6 @@ components:
   button-accent-active:
     backgroundColor: "{colors.primary}"
     textColor: "{colors.on-primary}"
-  theme-toggle:
-    backgroundColor: "{colors.surface}"
-    textColor: "{colors.primary}"
-    rounded: "{rounded.full}"
-    size: 44px
-  theme-toggle-dark:
-    backgroundColor: "{colors.surface-dark}"
-    textColor: "{colors.on-surface-dark}"
-    rounded: "{rounded.full}"
-    size: 44px
   dark-secondary-text:
     backgroundColor: "{colors.surface-dark}"
     textColor: "{colors.text-muted-dark}"
@@ -234,7 +236,7 @@ components:
 
 Este sistema describe un portafolio editorial abierto: una composición con tensión, tipografía de carácter, una base neutra y pequeños acentos de cristal. La personalidad es sobria y deja que los proyectos tengan el protagonismo; el recorrido debe ser claro para quien entra a entender qué hago y a encontrar mi trabajo.
 
-El sistema se ofrece en tema claro y oscuro. Ambos comparten tokens, tipografía y jerarquía; lo que cambia es la superficie de lectura. La preferencia se recuerda y el cambio se resuelve con un fundido breve, sin alterar la composición.
+El portafolio usa una sola base clara: {colors.surface} para el fondo y {colors.on-surface} para la lectura. Los tonos oscuros permanecen en la paleta solo para bloques puntuales, no como un segundo modo de página.
 
 La firma no está en aplicar un efecto a todo, sino en cómo selecciono, ordeno y relaciono las piezas: el contraste entre un encabezado compacto y una zona amplia de descanso, o entre una imagen dominante y una descripción breve. Letras gruesas y cercanas entre sí, imágenes con protagonismo y pocos recursos bien elegidos.
 
@@ -261,7 +263,7 @@ El fondo principal es {colors.surface} y el texto es {colors.primary}. Esa relac
 
 Contraste: sobre {colors.surface}, {colors.tertiary} alcanza aproximadamente 4.78:1, y la misma relación se mantiene al colocar {colors.on-tertiary} sobre un botón azul. Sobre {colors.primary}, el contraste de {colors.tertiary} baja a 3.72:1 y el de {colors.accent-graphic} a 2.15:1; por eso los enlaces pequeños sobre oscuro se mantienen claros y subrayados. El rosa {colors.accent-detail} queda fuera del texto pequeño sobre fondo claro.
 
-El sistema tiene dos temas que comparten los mismos tokens. En el tema claro el fondo es {colors.surface}, la lectura {colors.on-surface} y el texto secundario {colors.secondary}. En el tema oscuro el fondo pasa a {colors.surface-dark}, la lectura a {colors.on-surface-dark} y el texto secundario a {colors.text-muted-dark}; los enlaces se mantienen claros y subrayados, nunca azules en texto pequeño. El tema oscuro no introduce colores nuevos: reasigna los existentes.
+La página usa fondo {colors.surface}, lectura {colors.on-surface} y texto secundario {colors.secondary}. {colors.surface-dark} queda disponible para componentes oscuros puntuales, con {colors.on-surface-dark} como lectura y enlaces claros subrayados. No hay selector de tema.
 
 Un estado activo, un error o un enlace se reconoce también por su forma, su mensaje o un subrayado, no solo por el color. Cada zona mantiene un solo acento dominante.
 
@@ -313,9 +315,9 @@ Las portadas provisionales de los proyectos usan marcos rectangulares con radio 
 
 ## Elevation & Depth
 
-La profundidad se concentra en la navegación flotante y, cuando se necesita, en una barra de acciones superpuesta a una imagen. En la versión clara se usa {colors.surface} al 88 %, desenfoque de fondo de 16 px y borde de 1 px en {colors.primary} al 12 %. La versión oscura usa {colors.surface-dark} al 90 % y borde blanco al 16 %. El texto y los íconos permanecen completamente opacos.
+La profundidad se concentra en la navegación flotante y, cuando se necesita, en una barra de acciones superpuesta a una imagen. En la página clara se usa {colors.surface} al 88 %, desenfoque de fondo de 16 px y borde de 1 px en {colors.primary} al 12 %. El texto y los íconos permanecen completamente opacos.
 
-Las fotografías, los proyectos y los formularios conservan superficies sólidas. No se acumulan capas transparentes en una misma zona. Si el fondo dificulta la lectura o se desactiva la transparencia, la navegación usa {colors.surface} o {colors.surface-dark} sólidos.
+Las fotografías, los proyectos y los formularios conservan superficies sólidas. No se acumulan capas transparentes en una misma zona. Si el fondo dificulta la lectura o se desactiva la transparencia, la navegación usa {colors.surface} sólido.
 
 Sombras permitidas:
 
@@ -324,7 +326,7 @@ Sombras permitidas:
 - Modales: opacos, con un velo negro al 40 % detrás.
 - Tarjetas de proyecto: sin sombra permanente; se integran al fondo.
 
-Las transiciones duran entre 160 y 220 ms y se concentran en color, borde y pequeños cambios de escala o posición. El cambio entre tema claro y oscuro usa un fundido de 320 ms sobre color, borde, sombra y filtro para que el paso no sea brusco. Al solicitar movimiento reducido se eliminan los desplazamientos, los aumentos de imagen y el fundido de tema. La portada admite un ciclo breve del personaje, sin sonido y sin controles, porque presenta la faceta de movimiento del autor. No se repiten animaciones decorativas en los proyectos.
+Las transiciones duran entre 160 y 220 ms y se concentran en color, borde y pequeños cambios de escala o posición. Al solicitar movimiento reducido se eliminan los desplazamientos y los aumentos de imagen. La portada admite un ciclo breve del personaje, sin sonido y sin controles, porque presenta la faceta de movimiento del autor. No se repiten animaciones decorativas en los proyectos.
 
 ## Shapes
 
@@ -338,17 +340,15 @@ El nombre funciona como firma tipográfica; no se incorporan símbolos decorativ
 
 **Navegación.** Flota sobre el contenido con el tratamiento de cristal descrito en Elevation & Depth y usa nombres directos: Proyectos, Sobre mí y Contacto. Los enlaces se leen a {typography.nav}; el destino activo se distingue por peso, posición o subrayado, no solo por color.
 
-**Presentación y proyectos.** La entrada centra el nombre, una frase que explica el enfoque, el personaje y dos destinos claros. Sobre mí precede a los proyectos; después, los proyectos ocupan la mayor parte del recorrido y el contacto lo cierra. El personaje aparece solo en la entrada para que no compita con las imágenes de los trabajos. Cada proyecto abre con su nombre, categoría y año. La explicación conecta el problema con la idea y las decisiones visuales antes de mostrar las aplicaciones. Se incluye la participación y los créditos cuando el trabajo es compartido.
+**Presentación y proyectos.** La entrada combina el logotipo vectorial del nombre con un juego progresivo de pesos, del trazo ligero de la «a» al negro de la «n», y sitúa el personaje a su lado. La frase «me gusta entender una idea antes de darle forma» lleva el peso de la presentación; «idea» y «forma» parten en DM Sans Light; al pasar el cursor cambian con un fundido breve a DM Sans Medium Italic y toman {colors.tertiary} y {colors.accent-detail}. En dispositivos táctiles los acentos permanecen visibles sin depender del cursor. Debajo, un texto breve nombra la condición de estudiante y el proceso de observación y prueba. Dos acciones conducen a Sobre mí y Proyectos. Sobre mí precede a los proyectos; después, los proyectos ocupan la mayor parte del recorrido y el contacto lo cierra. El personaje aparece solo en la entrada para que no compita con las imágenes de los trabajos. Cada proyecto abre con su nombre, categoría y año. La explicación conecta el problema con la idea y las decisiones visuales antes de mostrar las aplicaciones. Se incluye la participación y los créditos cuando el trabajo es compartido.
 
 **Tarjetas de proyecto.** Cada entrada reúne una imagen, el nombre, la categoría y el año, separados entre 12 y 16 px. La imagen y el título abren el mismo destino. Al pasar el cursor se subraya el nombre y la imagen puede crecer hasta un 2 % dentro de su marco. La fotografía personal puede ser monocromática; las piezas del portafolio conservan los colores que necesitan para entenderse. Sin sombra permanente.
 
 **Botones.** El botón principal usa {components.button-primary.backgroundColor} con texto {components.button-primary.textColor}, altura mínima de {components.button-primary.height}, espacio horizontal de {components.button-primary.padding} y radio de {rounded.md}. Al pasar el cursor sube a {components.button-primary-hover.backgroundColor} y al presionarlo baja a {components.button-primary-active.backgroundColor}; el cambio de luminosidad es visible para que el reposo y el hover no se confundan. Sobre oscuro se usa la versión clara. El botón azul {components.button-accent.backgroundColor} se reserva para una acción que requiera énfasis, mantiene texto {components.button-accent.textColor} y al pasar el cursor cambia a {components.button-accent-hover.backgroundColor}; al presionarlo pasa a {components.button-accent-active.backgroundColor} con texto {components.button-accent-active.textColor}.
 
-**Botones secundarios y controles de ícono.** Los secundarios tienen fondo claro, texto oscuro y borde de 1 px en {colors.secondary}; al pasar el cursor invierten a {components.button-secondary-hover.backgroundColor} con texto {components.button-secondary-hover.textColor}, y al presionarlos usan {components.button-secondary-active.backgroundColor}. En el tema oscuro el secundario parte transparente con borde {colors.text-muted-dark} y el hover lo rellena de claro. Los controles de ícono disponen de un área mínima de 44 × 44 px y un nombre accesible.
+**Botones secundarios y controles de ícono.** Los secundarios tienen fondo claro, texto oscuro y borde de 1 px en {colors.secondary}; al pasar el cursor invierten a {components.button-secondary-hover.backgroundColor} con texto {components.button-secondary-hover.textColor}, y al presionarlos usan {components.button-secondary-active.backgroundColor}. Los controles de ícono disponen de un área mínima de 44 × 44 px y un nombre accesible.
 
-**Cambio de tema.** El control de tema es un botón circular de {components.theme-toggle.size} con {components.theme-toggle.backgroundColor} y {components.theme-toggle.textColor}; en oscuro usa {components.theme-toggle-dark.backgroundColor} y {components.theme-toggle-dark.textColor}. Muestra el ícono de luna cuando el tema claro está activo y el de sol cuando está el oscuro, con una transición de 320 ms. Mantiene `aria-pressed`, una etiqueta que nombra la acción siguiente (“Activar modo oscuro” o “Activar modo claro”) y guarda la preferencia en el navegador.
-
-**Retrato del personaje.** La portada usa una animación de cinco segundos que se reproduce automáticamente, en silencio y en bucle, sin controles. Dos versiones comprimidas del mismo original respetan los temas: tinta oscura sobre {colors.surface} y tinta clara sobre {colors.surface-dark}. Ambas tienen idéntico recorte y tamaño, y se cruzan con un fundido de 460 ms. La imagen fija correspondiente aparece si el video no se reproduce o si la persona prefiere menos movimiento. La tarjeta personal de la referencia visual conserva la ilustración estática. El personaje se presenta libre, sin marco ni fondo de tarjeta de proyecto. Es una pieza personal, no un trabajo de cliente.
+**Retrato del personaje.** La portada usa una animación transparente de cinco segundos derivada del video original. Se reproduce en bucle, sin sonido ni controles; al preferir menos movimiento se muestra una imagen fija. La transparencia permite que {colors.surface} sea el único fondo y evita un recuadro alrededor del dibujo. El personaje aparece junto a la firma, una sola vez y sin marco. Es una pieza personal, no un trabajo de cliente.
 
 **Mensajes de error.** El texto explica el problema junto al campo y se acompaña de un punto de {components.error-marker.size} en {components.error-marker.backgroundColor}; el color no es la única señal. El texto secundario sobre oscuro usa {components.dark-secondary-text.textColor}.
 
@@ -375,6 +375,6 @@ Los encabezados, muestras y componentes se animan individualmente cada vez que e
 - **Sí:** respetar la preferencia de movimiento reducido, eliminando desplazamientos y aumentos de imagen.
 - **No:** incorporar animaciones continuas en los proyectos; el ciclo breve del personaje queda reservado a la portada y se detiene con la preferencia de movimiento reducido.
 - **Sí:** revisar qué aporta cada recurso, qué hace más fácil y si conserva la claridad en móvil.
-- **Sí:** ofrecer tema claro y oscuro con la misma jerarquía, recordar la preferencia y anunciar el cambio.
-- **No:** usar el azul en texto pequeño sobre el tema oscuro ni introducir colores que no existan en la paleta.
+- **Sí:** mantener una única base clara y reservar {colors.surface-dark} para bloques puntuales.
+- **No:** introducir un selector de tema ni colores ajenos a la paleta.
 - **No:** añadir símbolos decorativos ajenos a la identidad tipográfica del nombre.

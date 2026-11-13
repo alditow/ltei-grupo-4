@@ -6,12 +6,12 @@ Presentar siete proyectos de branding, campañas y motion graphics para mostrar 
 
 ## Recorrido de la página principal
 
-1. Inicio: composición centrada con nombre, rol, enfoque, personaje personal y accesos a Sobre mí y Proyectos.
+1. Inicio: composición centrada con logotipo del nombre de peso progresivo, personaje personal animado, frase de presentación y accesos a Sobre mí y Proyectos.
 2. Sobre mí: presentación breve en primera persona sobre formación, prácticas y modo de colaborar.
 3. Proyectos: siete trabajos agrupados por área, con módulos visuales y texto explicativo.
 4. Contacto: invitación a conversar e Instagram como único canal confirmado.
 
-La navegación muestra el nombre como enlace al inicio y los destinos Sobre mí, Proyectos y Contacto. En móvil conserva esos destinos en un menú rotulado. El personaje aparece una vez, en la portada, en una animación breve, silenciosa y en bucle; una imagen fija cubre la preferencia de movimiento reducido. No se repite el mismo recurso antes de los trabajos. El pie muestra el nombre, el año de publicación y un enlace al inicio.
+La navegación muestra el nombre como enlace al inicio y los destinos Sobre mí, Proyectos y Contacto. En móvil conserva esos destinos en un menú rotulado. El personaje aparece una vez, junto al logotipo en la portada, en una animación transparente, silenciosa y en bucle; una imagen fija cubre la preferencia de movimiento reducido. No se repite el mismo recurso antes de los trabajos. El pie muestra el nombre, el año de publicación y un enlace al inicio.
 
 ## Proyectos
 
@@ -47,7 +47,7 @@ Invitación a conversar sobre proyectos y colaboraciones. Instagram es el canal 
 
 ## Comportamiento
 
-La página mantiene el mismo orden en móvil y escritorio. En móvil usa una columna, controles táctiles de al menos 44 × 44 px, texto junto a las portadas y una navegación que no tapa el contenido. Los temas claro y oscuro cambian sin alterar jerarquía ni destinos. La aparición de elementos puede acompañar el recorrido, pero el contenido siempre debe quedar disponible y respetar movimiento reducido. La página abre en el inicio, salvo al seguir un enlace directo a una sección.
+La página mantiene el mismo orden en móvil y escritorio. En móvil usa una columna, controles táctiles de al menos 44 × 44 px, texto junto a las portadas y una navegación que no tapa el contenido. La página mantiene una sola base clara, sin selector de tema. La aparición de elementos puede acompañar el recorrido, pero el contenido siempre debe quedar disponible y respetar movimiento reducido. La página abre en el inicio, salvo al seguir un enlace directo a una sección.
 
 ## Criterio de publicación
 

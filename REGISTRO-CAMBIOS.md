@@ -219,3 +219,15 @@ Cuando cierres Word, este párrafo se añade al final de la introducción del do
 - La portada sustituye las ilustraciones estáticas por un ciclo de cinco segundos, automático, silencioso y sin controles. Se conserva una imagen fija para la preferencia de movimiento reducido y para carga inicial.
 - El original `assets/yo.mov` se mantiene solo como fuente local. Para la web se generaron dos versiones H.264 ligeras, una por tema, con el mismo recorte y tamaño para evitar saltos al cambiar de tema.
 - Se actualizaron `index.html`, `DESIGN.md`, `CV.md` y los documentos de Word de sistema de diseño y arquitectura para describir la misma decisión. La tarjeta personal de `design.html` permanece estática porque es una muestra del componente, no una segunda portada.
+
+## 2026-11-13 · Portada clara y firma personal
+
+- El portafolio y la guía visual quedan en una sola base clara; se retira el selector de tema. Los colores oscuros siguen disponibles para bloques puntuales.
+- La entrada usa el logotipo vectorial del nombre, cuyo peso progresa de extraligero a negro, junto al personaje. La frase principal organiza la jerarquía y reserva azul para «idea» y rosa para «forma».
+- La animación del personaje se entrega como PNG animado transparente, en bucle y sin sonido. La imagen fija aparece con movimiento reducido. El fondo transparente elimina el recuadro visible de los videos comprimidos.
+- Se actualizaron la página, la guía visual, DESIGN.md, CV.md y ambos documentos de Word para describir la misma decisión.
+
+## 2026-11-13 · Interacción tipográfica en la entrada
+
+- El SVG de la frase sirve como referencia de composición. La versión web usa texto real para permitir cambio por palabra y conservar lectura adaptable.
+- «Idea» y «forma» parten en DM Sans Light. Al pasar el cursor, una capa DM Sans Medium Italic aparece con fundido breve y toma el azul o el rosa. En pantallas táctiles los acentos se muestran sin depender de hover; con movimiento reducido no hay transición.

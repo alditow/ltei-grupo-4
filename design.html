@@ -3,22 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+<meta name="color-scheme" content="light">
 <meta name="theme-color" content="#F4F4F4" id="theme-color">
 <title>Sistema de diseño — Aldo Iván</title>
-<meta name="description" content="Referencia visual del sistema de diseño de Aldo Iván: colores, tipografía, espaciado, formas, elevación, componentes y temas claro y oscuro. Una guía visual de sus decisiones de diseño.">
-<script>
-  (function () {
-    try {
-      var saved = localStorage.getItem("aldo-theme");
-      var systemDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-      var theme = saved === "dark" || saved === "light" ? saved : (systemDark ? "dark" : "light");
-      document.documentElement.setAttribute("data-theme", theme);
-    } catch (error) {
-      document.documentElement.setAttribute("data-theme", "light");
-    }
-  })();
-</script>
+<meta name="description" content="Referencia visual del sistema de diseño de Aldo Iván: colores, tipografía, espaciado, formas, elevación, componentes y componentes. Una guía visual de sus decisiones de diseño.">
+
 <link rel="stylesheet" href="styles/fonts.css">
 <style>
   /* ==========================================================================
@@ -1251,26 +1240,6 @@
       <li><a href="#reglas">Reglas</a></li>
     </ul>
     <div class="nav-actions">
-      <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Activar modo oscuro" title="Activar modo oscuro">
-        <span class="theme-icon theme-icon--moon" aria-hidden="true">
-          <svg viewBox="0 0 12.33 12.52" fill="currentColor" focusable="false">
-            <path d="M12.33,8.39c-.9,2.41-3.23,4.13-5.96,4.13-3.52,0-6.37-2.85-6.37-6.37C0,3.2,2.01.72,4.73,0c-.27.69-.41,1.45-.41,2.23,0,3.52,2.85,6.38,6.37,6.38.57,0,1.12-.07,1.64-.22Z"/>
-          </svg>
-        </span>
-        <span class="theme-icon theme-icon--sun" aria-hidden="true">
-          <svg viewBox="0 0 15.21 15.21" fill="currentColor" focusable="false">
-            <circle cx="7.61" cy="7.61" r="4.27"/>
-            <rect x="7.09" width="1.03" height="2.04"/>
-            <rect x="2.43" y="1.93" width="1.03" height="2.04" transform="translate(-1.22 2.95) rotate(-45)"/>
-            <rect x=".51" y="6.59" width="1.03" height="2.04" transform="translate(-6.59 8.63) rotate(-90)"/>
-            <rect x="2.43" y="11.24" width="1.03" height="2.04" transform="translate(-3.64 23.02) rotate(-135)"/>
-            <rect x="7.09" y="13.17" width="1.03" height="2.04" transform="translate(15.21 28.38) rotate(-180)"/>
-            <rect x="11.75" y="11.24" width="1.03" height="2.04" transform="translate(29.6 12.26) rotate(135)"/>
-            <rect x="13.68" y="6.59" width="1.03" height="2.04" transform="translate(21.8 -6.59) rotate(90)"/>
-            <rect x="11.75" y="1.93" width="1.03" height="2.04" transform="translate(5.68 -7.81) rotate(45)"/>
-          </svg>
-        </span>
-      </button>
       <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list">
         Menú
         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false">
@@ -1289,7 +1258,7 @@
       <div class="hero-copy">
         <p class="chip">Sistema de diseño · v1.2</p>
         <h1 id="hero-title" style="margin-top: var(--s-md)">Aldo Iván</h1>
-        <p class="lede">Composición editorial abierta, tipografía de carácter, base neutra, acentos de cristal y dos temas, claro y oscuro. Aquí se muestra cómo conviven la tipografía, los colores, el ritmo y los componentes. El personaje es una pieza personal; los proyectos conservan su propia identidad.</p>
+        <p class="lede">Composición editorial abierta, tipografía de carácter, base clara y acentos de color medidos. Aquí se muestra cómo conviven la tipografía, los colores, el ritmo y los componentes. El personaje es una pieza personal; los proyectos conservan su propia identidad.</p>
       </div>
       <figure class="portrait" id="retrato">
         <div class="portrait-frame">
@@ -1316,7 +1285,7 @@
       <div class="section-head">
         <p class="eyebrow">01 — Color</p>
         <h2 id="colores-title">Paleta y roles</h2>
-        <p class="lede">El fondo es <strong>surface</strong> y el texto <strong>primary</strong>. Los bloques oscuros usan <strong>surface-dark</strong>. Cada zona mantiene un solo acento dominante. En el tema oscuro, <strong>surface-dark</strong> pasa a ser el fondo, <strong>on-surface-dark</strong> la lectura y <strong>text-muted-dark</strong> el texto secundario.</p>
+        <p class="lede">El fondo es <strong>surface</strong> y el texto <strong>primary</strong>. Los bloques oscuros usan <strong>surface-dark</strong>. Cada zona mantiene un solo acento dominante. Los colores oscuros se reservan para bloques puntuales, no para otro modo de la página.</p>
       </div>
 
       <div class="swatches" id="swatches">
@@ -1430,18 +1399,18 @@
       </div>
 
       <div class="theme-map" aria-labelledby="tema-title">
-        <h3 id="tema-title">Temas claro y oscuro</h3>
-        <p class="value">El tema no crea colores nuevos: reasigna los mismos tokens. La preferencia se guarda en el navegador y el cambio se anuncia a los lectores de pantalla.</p>
+        <h3 id="tema-title">Base clara y bloque oscuro</h3>
+        <p class="value">La página usa una sola base clara. El bloque oscuro muestra cómo se leen los tonos de contraste cuando se aplican en un componente puntual.</p>
         <div class="theme-map-grid">
           <article class="theme-card theme-card--light">
-            <p class="theme-card-title">Tema claro</p>
+            <p class="theme-card-title">Base clara</p>
             <p><strong>Fondo</strong> surface <code>#F4F4F4</code></p>
             <p><strong>Lectura</strong> on-surface <code>#0C0C0C</code></p>
             <p class="theme-card-muted"><strong>Secundario</strong> secondary <code>#4F4F4F</code></p>
             <p class="theme-card-muted"><strong>Enlaces</strong> <span class="theme-card-link">tertiary</span> <code>#105EF9</code></p>
           </article>
           <article class="theme-card theme-card--dark">
-            <p class="theme-card-title">Tema oscuro</p>
+            <p class="theme-card-title">Bloque oscuro</p>
             <p><strong>Fondo</strong> surface-dark <code>#222222</code></p>
             <p><strong>Lectura</strong> on-surface-dark <code>#F4F4F4</code></p>
             <p class="theme-card-muted"><strong>Secundario</strong> text-muted-dark <code>#BFBFBF</code></p>
@@ -1898,46 +1867,7 @@
     });
   });
 
-  /* ---------- Tema claro / oscuro ---------- */
-  var root = document.documentElement;
-  var themeToggle = $("#theme-toggle");
-  var themeColor = $("#theme-color");
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-  var themeTimer;
-
-  function applyTheme(theme, persist, announce) {
-    var dark = theme === "dark";
-    root.setAttribute("data-theme", theme);
-    themeToggle.setAttribute("aria-pressed", String(dark));
-
-    var label = dark ? "Activar modo claro" : "Activar modo oscuro";
-    themeToggle.setAttribute("aria-label", label);
-    themeToggle.title = label;
-
-    if (themeColor) {
-      themeColor.setAttribute("content", dark ? "#222222" : "#F4F4F4");
-    }
-    if (persist) {
-      try { localStorage.setItem("aldo-theme", theme); } catch (error) {}
-    }
-    if (announce) {
-      aviso.textContent = dark ? "Modo oscuro activado" : "Modo claro activado";
-    }
-  }
-
-  applyTheme(root.getAttribute("data-theme") === "dark" ? "dark" : "light", false, false);
-
-  themeToggle.addEventListener("click", function () {
-    var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
-    if (!reduceMotion.matches) {
-      root.classList.add("theme-anim");
-      window.clearTimeout(themeTimer);
-      themeTimer = window.setTimeout(function () {
-        root.classList.remove("theme-anim");
-      }, 500);
-    }
-    applyTheme(next, true, true);
-  });
 
   /* ---------- Escala tipográfica ---------- */
   var specimens = $("#specimens");
