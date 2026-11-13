@@ -1,21 +1,20 @@
-# Portafolio de Aldo Iván
+# Arquitectura del portafolio de Aldo Iván
 
-## Objetivo
+## Objetivo y público
 
-Presentar siete proyectos de branding, campañas y motion graphics para mostrar cómo pienso y ejecuto piezas visuales, y abrir conversaciones de colaboración. Los proyectos son el centro del recorrido; formación y práctica profesional aportan contexto.
+Presentar mi trabajo como estudiante de diseño gráfico a docentes, equipos creativos y posibles colaboradores. Las imágenes permiten revisar la ejecución; las descripciones aclaran el alcance de cada propuesta. La página no debe atribuirme resultados o encargos que no estén confirmados.
 
-## Recorrido de la página principal
+## Recorrido vigente
 
-1. Inicio: composición centrada con logotipo del nombre de peso progresivo, personaje personal animado y frase de presentación. A continuación, un índice horizontal enlaza las tres áreas de trabajo.
-2. Sobre mí: presentación breve en primera persona sobre formación, prácticas y modo de colaborar.
-3. Proyectos: siete trabajos agrupados por área, con módulos visuales y texto explicativo.
-4. Contacto: invitación a conversar e Instagram como único canal confirmado.
+1. Portada centrada: personaje animado, nombre reactivo «aldo iván», rótulo «diseñador gráfico» y frase «me gusta entender una idea antes de darle forma», sin punto final. No lleva botones ni párrafo adicional.
+2. Contenido: índice horizontal de Branding, Campañas y Motion Graphics, con acceso a cada grupo.
+3. Sobre mí: formación, prácticas en Injerto y forma de colaborar, antes de los proyectos.
+4. Proyectos: franja de tres marcas y siete módulos agrupados en tres áreas.
+5. Contacto: invitación a conversar y enlace a Instagram @alivann. El pie incluye nombre, año y regreso al inicio.
 
-El índice de contenido, situado entre la portada y Sobre mí, permite recorrer horizontalmente Branding, Campañas y Motion Graphics mediante desplazamiento táctil o controles. Cada tarjeta enlaza con su grupo; muestra parte de la siguiente tarjeta para indicar continuidad. La navegación muestra el nombre como enlace al inicio y los destinos Sobre mí, Proyectos y Contacto. En móvil conserva esos destinos en un menú rotulado. El personaje aparece una vez, junto al logotipo en la portada, en una animación transparente, silenciosa y en bucle; una imagen fija cubre la preferencia de movimiento reducido. No se repite el mismo recurso antes de los trabajos. El pie muestra el nombre, el año de publicación y un enlace al inicio.
+La cabecera ofrece Sobre mí, Proyectos y Contacto; el nombre vuelve a la portada. En móvil, Menú muestra los mismos destinos. Pausar detiene los movimientos automáticos. La página abre al inicio salvo que se siga un enlace directo. La condición de estudiante se mantiene explícita en Sobre mí; el rótulo profesional no implica una agencia.
 
-## Proyectos
-
-Cada entrada muestra portada, nombre, área y una frase explicativa. El año aparece solo si está confirmado. Portada y título abrirán la misma página de caso cuando exista. Las piezas de proyectos conservan su color original. Las imágenes pendientes se indican como provisionales y no se simulan resultados. Cada proyecto se presenta en un módulo amplio: una imagen principal grande a la derecha y una tira superpuesta de cuatro miniaturas (portada, sistema, detalle y aplicación); nombre, área y explicación quedan a la izquierda. Cada miniatura cambia la vista principal mediante clic o teclado. Cuando existan imágenes reales, estos espacios se reemplazarán por piezas del proyecto.
+## Organización de los proyectos
 
 ### Branding
 
@@ -33,22 +32,30 @@ Cada entrada muestra portada, nombre, área y una frase explicativa. El año apa
 - **Tipognoma:** reel tipográfico para una casa tipográfica ficticia. El caso enseñará ritmo, secuencia y decisiones de animación.
 - **Robot Dreams:** proyecto colaborativo de animación de créditos para la película. El caso distinguirá mi contribución de las decisiones del equipo.
 
-## Estructura futura de cada caso
+## Presentación e interacción
 
-Portada y ficha breve; contexto y planteamiento; decisiones visuales; aplicaciones del sistema al detalle; resultado verificable o alcance entregado; participación y créditos; navegación entre casos y regreso al listado. No se inventa proceso ni desempeño cuando no hay material que lo sostenga.
+Cada módulo mantiene categoría, nombre, descripción y alcance junto a una imagen dominante. En escritorio el texto ocupa la izquierda y la imagen la derecha. Una tira de miniaturas cruza el borde inferior izquierdo con un soporte opaco del color del fondo. En móvil el texto precede a la galería. La franja superior de Quest, TipoFilicko y Qatar enlaza directamente a esos módulos; no es una lista de clientes confirmados.
 
-## Sobre mí
+Quest contiene un logo y cinco mockups; TipoFilicko un logo y nueve mockups. Ambos empiezan con el logo completo y centrado. Las miniaturas son previsualizaciones seleccionables, no proyectos distintos. Clic, teclado, flechas y gesto horizontal permiten recorrer las vistas. La transición conserva el tamaño del marco. Los mockups llenan el marco y admiten arrastre y zoom de 1 a 2.5; el logo se conserva completo. Seleccionar otra imagen restablece el encuadre.
 
-Soy estudiante de séptimo semestre de diseño gráfico y realizo mis prácticas profesionales en Injerto. Me interesa colaborar en identidad, comunicación visual y movimiento, aportando en distintas etapas según las necesidades del equipo. El personaje de la portada me representa; no es un proyecto de cliente.
+Las miniaturas avanzan automáticamente hacia la izquierda, se ralentizan con el cursor y se detienen al recibir foco de teclado o al pulsar Pausar. El trackpad permite avanzar y retroceder sin impedir el desplazamiento vertical fuera de ese gesto. El índice de áreas y la cinta branding también tienen movimiento continuo. La preferencia de movimiento reducido mantiene navegación manual y una imagen fija del personaje.
 
-## Contacto
+Qatar, MACABRO FICH, movo, Tipognoma y Robot Dreams siguen con vistas provisionales. Sus textos no deben confundirse con piezas finales. La estructura admite añadir imágenes sin cambiar el recorrido ni reconstruir los controles.
 
-Invitación a conversar sobre proyectos y colaboraciones. Instagram es el canal confirmado: **@alivann**. La dirección exacta del perfil debe comprobarse antes de publicar un enlace. No se publica correo, teléfono ni formulario sin datos confirmados.
+## Sobre mí y contacto
 
-## Comportamiento
+Soy estudiante de séptimo semestre de diseño gráfico y realizo mis prácticas profesionales en Injerto. Me interesa colaborar en identidad, comunicación visual y movimiento. El personaje personal identifica al autor únicamente en la portada; no cuenta como proyecto ni como marca de cliente.
 
-La página mantiene el mismo orden en móvil y escritorio. En móvil usa una columna, controles táctiles de al menos 44 × 44 px, texto junto a las portadas y una navegación que no tapa el contenido. La página mantiene una sola base clara, sin selector de tema. La aparición de elementos puede acompañar el recorrido, pero el contenido siempre debe quedar disponible y respetar movimiento reducido. La página abre en el inicio, salvo al seguir un enlace directo a una sección.
+Instagram @alivann es el canal indicado y se enlaza desde Contacto. No hay correo, teléfono ni formulario de envío. El funcionamiento del enlace no garantiza la disponibilidad futura del perfil externo.
 
-## Criterio de publicación
+## Adaptación y accesibilidad
 
-Cada caso debe poder sostenerse con material visual, explicación de la participación y créditos precisos. Las propuestas académicas o conceptuales se identifican como tales. Los enlaces e imágenes con texto alternativo se revisan antes de publicar.
+Se conserva el orden de contenido en todos los tamaños. Por debajo de 1024 px los módulos pasan a una columna. La portada ajusta sus tamaños a la altura disponible; si el usuario amplía el texto, debe poder desplazarse sin perder contenido. La base es clara, sin selector de tema.
+
+Los controles tienen nombres accesibles y foco visible. Las miniaturas informan cuál está seleccionada y el cambio de vista se anuncia sin interrumpir la lectura. Los controles de galería miden 38 px; el menú tiene 44 px de alto. No se afirma que todos los controles midan 44 px. Las animaciones no son necesarias para acceder a la información.
+
+## Desarrollo pendiente
+
+La página actual es una landing de una sola página. No hay enlaces a páginas de caso inexistentes. Cada futuro caso deberá explicar contexto, problema, concepto, decisiones, aplicaciones, participación y créditos, con resultados únicamente cuando sean verificables. En Robot Dreams debe especificarse la contribución individual. En propuestas académicas se mantendrá esa identificación.
+
+Antes de la entrega académica final faltan las piezas de cinco proyectos y sus explicaciones de proceso y autoría. El sistema visual ya define cómo incorporarlas, pero los mockups por sí solos no demuestran el razonamiento de diseño.

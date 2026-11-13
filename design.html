@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="styles/fonts.css">
 <style>
   /* ==========================================================================
-     1. Tokens — copiados de DESIGN.md (v1.2)
+     1. Tokens — copiados de DESIGN.md (v1.3)
      ========================================================================== */
   :root {
     /* colors */
@@ -1222,6 +1222,8 @@
     .card:hover .card-media img { transform: none; }
     .btn:hover, .btn:active { transform: none !important; }
   }
+
+.current-system{margin-bottom:64px}.current-system>p{max-width:70ch}.current-system h3{margin-top:32px}.current-name{font:200 clamp(44px,8vw,106px)/.95 var(--font-display);letter-spacing:-.05em}.current-phrase{font:300 clamp(30px,5vw,70px)/1.06 var(--font-display);letter-spacing:-.04em}.current-gallery{position:relative;width:min(100%,650px);margin:32px 0 48px auto;background:#fff;border-radius:20px;aspect-ratio:1.1;display:grid;place-items:center}.current-gallery>img{width:70%;height:70%;object-fit:contain;transform:translateY(-4%)}.current-thumbs{position:absolute;left:-35%;bottom:6%;width:85%;display:flex;gap:14px;background:#F4F4F4;padding:14px;border-radius:20px}.current-thumbs img{width:calc((100% - 28px)/3);aspect-ratio:1.3;object-fit:cover;border-radius:20px}@media(max-width:800px){.current-thumbs{left:0;width:90%}.current-gallery{margin-bottom:32px}}
 </style>
 </head>
 <body>
@@ -1256,7 +1258,7 @@
   <section class="hero wrap" id="inicio" aria-labelledby="hero-title">
     <div class="hero-grid">
       <div class="hero-copy">
-        <p class="chip">Sistema de diseño · v1.2</p>
+        <p class="chip">Sistema de diseño · v1.3</p>
         <h1 id="hero-title" style="margin-top: var(--s-md)">Aldo Iván</h1>
         <p class="lede">Composición editorial abierta, tipografía de carácter, base clara y acentos de color medidos. Aquí se muestra cómo conviven la tipografía, los colores, el ritmo y los componentes. El personaje es una pieza personal; los proyectos conservan su propia identidad.</p>
       </div>
@@ -1271,11 +1273,11 @@
       </figure>
     </div>
     <dl class="stats">
-      <div><dt>Tonos / roles</dt><dd>10 / 15</dd></div>
-      <div><dt>Tipografías</dt><dd>13</dd></div>
+      <div><dt>Tonos / roles</dt><dd>11 / 16</dd></div>
+      <div><dt>Estilos tipográficos</dt><dd>17</dd></div>
       <div><dt>Radios</dt><dd>6</dd></div>
       <div><dt>Espaciados</dt><dd>18</dd></div>
-      <div><dt>Componentes</dt><dd>23</dd></div>
+      <div><dt>Componentes</dt><dd>22</dd></div>
     </dl>
   </section>
 
@@ -1288,7 +1290,7 @@
         <p class="lede">El fondo es <strong>surface</strong> y el texto <strong>primary</strong>. Los bloques oscuros usan <strong>surface-dark</strong>. Cada zona mantiene un solo acento dominante. Los colores oscuros se reservan para bloques puntuales, no para otro modo de la página.</p>
       </div>
 
-      <div class="swatches" id="swatches">
+      <div class="swatches" id="swatches"><article class="swatch"><div class="swatch-chip" style="background:#FFFFFF;color:#0C0C0C" aria-hidden="true">Aa</div><div class="swatch-body"><p class="swatch-name">surface-card</p><p class="value">#FFFFFF</p><p class="swatch-role">Blanco puro de galerías, miniaturas y tarjetas de marcas. Contrasta suavemente con el fondo de la página.</p><button class="copy" type="button" data-copy="#FFFFFF" aria-label="Copiar blanco puro"><span data-copy-label>Copiar</span></button></div></article>
 <article class="swatch">
           <div class="swatch-chip" style="background:#0C0C0C;color:#F4F4F4" aria-hidden="true">Aa</div>
           <div class="swatch-body">
@@ -1437,7 +1439,7 @@
           <p class="font-aa" aria-hidden="true">Aldo Iván / Aa Bb Cc</p>
           <dl>
             <dt>Ejes</dt><dd>peso 100–1000, tamaño óptico 9–40</dd>
-            <dt>Pesos usados</dt><dd>500 y 700</dd>
+            <dt>Pesos usados</dt><dd>200–900 en interacción; 300, 500 y 700 en lectura y titulares</dd>
             <dt>Formato</dt><dd>Variable · WOFF2 · 87 KB</dd>
             <dt>Licencia</dt><dd>SIL Open Font License 1.1</dd>
           </dl>
@@ -1517,7 +1519,7 @@
       <div class="section-head">
         <p class="eyebrow">03 — Retícula</p>
         <h2 id="espaciado-title">Espaciado y layout</h2>
-        <p class="lede">Base de 4 px. Contenido máximo de 1200 px, 12 columnas y calles de 24 px en escritorio. Los párrafos se mantienen entre 55 y 70 caracteres por línea.</p>
+        <p class="lede">Base de 4 px. Contenedor del portafolio de 1296 px, con hasta 1200 px útiles. Las 12 columnas son una referencia editorial; las galerías usan dos zonas 42/58, con 32 px entre ellas, y pasan a una columna en móvil.</p>
       </div>
 
       <div class="grid grid--2">
@@ -1592,7 +1594,7 @@
         <div class="shadow-box">Tarjeta de proyecto<br><span class="value">Sin sombra permanente</span></div>
       </div>
 
-      <p class="value" style="margin-top: var(--s-lg)">Transiciones de 160 a 220 ms sobre color, borde y pequeños cambios de escala o posición. Con movimiento reducido se eliminan los desplazamientos y los aumentos de imagen.</p>
+      <p class="value" style="margin-top: var(--s-lg)">Controles y muestras: 160–220 ms. Galerías: fundido de 380 ms; zoom: 240 ms; entrada de secciones: 550 ms. El portafolio permite pausar los ciclos continuos y respeta la preferencia de movimiento reducido.</p>
     </div>
   </section>
 
@@ -1646,9 +1648,20 @@
       <div class="section-head">
         <p class="eyebrow">06 — Piezas</p>
         <h2 id="componentes-title">Componentes</h2>
-        <p class="lede">Cada bloque tiene una sola acción principal. Los estados se reconocen por color y también por forma, subrayado o mensaje.</p>
+        <p class="lede">La portada, el índice y las galerías constituyen los componentes activos. Los botones generales, campos, filtros y modal que siguen son muestras de reserva, no funciones publicadas en la landing.</p>
       </div>
 
+      <div class="current-system">
+        <h3>Portada y tipografía reactiva</h3>
+        <p class="current-name">aldo iván</p><p>Nombre en DM Sans Extralight en reposo; cada letra reacciona al cursor con pesos máximos progresivos de 200 a 900. El personaje se sitúa arriba, seguido del nombre, «diseñador gráfico» y la frase en tres líneas.</p>
+        <p class="current-phrase">me gusta entender<br>una <span style="color:var(--c-tertiary)">idea</span> antes de<br>darle <span style="color:var(--c-accent-detail)">forma</span></p>
+        <p>La frase parte de Light; idea y forma llegan a Bold, sin cursiva. Solo reacciona la fila cercana al cursor. <a href="index.html#inicio">Probar la interacción en la portada</a>.</p>
+        <h3>Galería vigente</h3>
+        <div class="current-gallery"><img src="assets/quest/questologo.svg" alt="Logo de Quest Diagnostics centrado en un marco blanco"><div class="current-thumbs"><img src="assets/quest/q1.jpg" alt="Papelería de Quest"><img src="assets/quest/q2.jpg" alt="Aplicación de Quest"><img src="assets/quest/q3.jpg" alt="Mockup de Quest"></div></div>
+        <p>Marcos blancos de radio 20 px, sin contorno; miniaturas sobre un soporte opaco del color del fondo. El logo se muestra completo. Los mockups llenan el marco y admiten zoom y arrastre. Las miniaturas avanzan automáticamente y se pueden recorrer con el trackpad.</p>
+        <p><a href="index.html#branding-1">Explorar Quest</a> · <a href="index.html#branding-2">Explorar TipoFilicko</a>. Flechas y zoom: círculos de 38 px. Cambio de imagen: fundido de 380 ms con el encuadre resuelto desde el inicio.</p>
+        <h3>Índice y franja de marcas</h3><p>El índice oscuro enlaza las tres áreas con tarjetas móviles; al señalar una, las demás se desenfocan y el movimiento se ralentiza. La franja de marcas usa fondo claro, tarjetas blancas y la palabra branding en azul, con un desvanecido de 25 px alrededor del grupo. Pausar detiene estos ciclos y las miniaturas.</p>
+      </div>
       <div class="grid grid--2">
         <div class="panel">
           <h3>Botones</h3>
@@ -1766,7 +1779,7 @@
             <li>Aplicar el cristal a párrafos, formularios o a todas las tarjetas.</li>
             <li>Usar el azul en texto pequeño sobre fondos oscuros.</li>
             <li>Acumular capas transparentes en una misma zona o añadir sombra permanente a las tarjetas.</li>
-            <li>Incorporar animaciones continuas que interrumpan la revisión de los proyectos.</li>
+            <li>Añadir movimiento sin pausa o impedir que se revisen las imágenes con calma.</li>
             <li>Añadir símbolos decorativos ajenos a la identidad tipográfica del nombre.</li>
           </ul>
         </div>
@@ -1778,7 +1791,7 @@
 
 <footer class="site-foot">
   <div class="wrap">
-    <p>Sistema de diseño de Aldo Iván · v1.2 · 9 de noviembre de 2026. Un sistema vivo: cada cambio visual debe reflejarse en todas sus aplicaciones.</p>
+    <p>Sistema de diseño de Aldo Iván · v1.3 · 13 de noviembre de 2026. Un sistema vivo: cada cambio visual debe reflejarse en todas sus aplicaciones.</p>
     <nav aria-label="Navegación de pie de página"><a href="#inicio">Volver arriba</a></nav>
   </div>
 </footer>
@@ -1798,6 +1811,7 @@
 <script>
 (function () {
   "use strict";
+  var root = document.documentElement;
 
   var $ = function (sel, ctx) { return (ctx || document).querySelector(sel); };
   var $$ = function (sel, ctx) { return Array.prototype.slice.call((ctx || document).querySelectorAll(sel)); };

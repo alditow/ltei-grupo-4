@@ -9,6 +9,7 @@ colors:
   tertiary: "#105EF9"
   on-tertiary: "#F4F4F4"
   surface: "#F4F4F4"
+  surface-card: "#FFFFFF"
   on-surface: "#0C0C0C"
   surface-dark: "#222222"
   on-surface-dark: "#F4F4F4"
@@ -19,6 +20,18 @@ colors:
   accent-graphic: "#0000F4"
   accent-detail: "#EF1889"
 typography:
+  hero-name:
+    fontFamily: DM Sans
+    fontSize: 106px
+    fontWeight: 200
+    lineHeight: 101px
+    letterSpacing: -5.3px
+  project-title:
+    fontFamily: DM Sans
+    fontSize: 56px
+    fontWeight: 700
+    lineHeight: 58px
+    letterSpacing: -1px
   display-xl:
     fontFamily: DM Sans
     fontSize: 80px
@@ -33,10 +46,10 @@ typography:
     letterSpacing: -1px
   hero-statement:
     fontFamily: DM Sans
-    fontSize: 82px
+    fontSize: 70px
     fontWeight: 300
-    lineHeight: 87px
-    letterSpacing: -4px
+    lineHeight: 74.2px
+    letterSpacing: -2.8px
   hero-statement-mobile:
     fontFamily: DM Sans
     fontSize: 36px
@@ -217,10 +230,10 @@ components:
     typography: "{typography.nav}"
     rounded: "{rounded.lg}"
   project-card:
-    backgroundColor: "{colors.surface}"
+    backgroundColor: "{colors.surface-card}"
     textColor: "{colors.primary}"
-    typography: "{typography.project}"
-    rounded: "{rounded.sm}"
+    typography: "{typography.project-title}"
+    rounded: "{rounded.xl}"
   link:
     backgroundColor: "{colors.surface}"
     textColor: "{colors.tertiary}"
@@ -230,151 +243,85 @@ components:
     textColor: "{colors.primary}"
     typography: "{typography.body}"
     rounded: "{rounded.xl}"
+  gallery-control:
+    backgroundColor: "{colors.surface-card}"
+    textColor: "{colors.primary}"
+    rounded: "{rounded.full}"
+    size: 38px
 ---
 
 ## Overview
 
-Este sistema describe un portafolio editorial abierto: una composición con tensión, tipografía de carácter, una base neutra y pequeños acentos de cristal. La personalidad es sobria y deja que los proyectos tengan el protagonismo; el recorrido debe ser claro para quien entra a entender qué hago y a encontrar mi trabajo.
+Mi portafolio presenta mi trabajo como estudiante de diseño gráfico mediante una composición editorial de base clara, una firma tipográfica sensible al cursor y proyectos con imagen dominante. La personalidad está en la relación entre tipografía, personaje y piezas reales, no en acumular efectos. La versión vigente se revisó el 13 de noviembre de 2026.
 
-El portafolio usa una sola base clara: {colors.surface} para el fondo y {colors.on-surface} para la lectura. Los tonos oscuros permanecen en la paleta solo para bloques puntuales, no como un segundo modo de página.
-
-La firma no está en aplicar un efecto a todo, sino en cómo selecciono, ordeno y relaciono las piezas: el contraste entre un encabezado compacto y una zona amplia de descanso, o entre una imagen dominante y una descripción breve. Letras gruesas y cercanas entre sí, imágenes con protagonismo y pocos recursos bien elegidos.
-
-Cada zona mantiene un solo acento dominante y cada bloque, una sola acción principal. La densidad y los tamaños se resuelven para una pantalla real: los menús se leen y los controles se pueden tocar sin precisión excesiva. Los efectos deben tener una función visible dentro del recorrido; si solo añaden ruido, se eliminan.
-
-Este archivo es la fuente de verdad de la apariencia: los valores de color, tipografía, espaciado, formas y componentes viven aquí. El contenido, el orden de lectura y los enlaces se definen en el documento de arquitectura del portafolio, y cada cambio en ambos se anota en `docs/REGISTRO-CAMBIOS.md`.
+El recorrido es portada, índice de áreas, Sobre mí, proyectos agrupados y contacto. El índice facilita el acceso directo; Sobre mí aporta contexto antes de revisar el trabajo. No hay selector de tema. La guía visual distingue las reglas del portafolio de los componentes de reserva que todavía no se utilizan.
 
 ## Colors
 
-El fondo principal es {colors.surface} y el texto es {colors.primary}. Esa relación deja que la fotografía y los proyectos aporten variedad. En bloques oscuros se usa {colors.surface-dark} como superficie y {colors.on-surface-dark} para la lectura. {colors.surface-raised} y {colors.secondary} distinguen niveles; {colors.surface-muted} y {colors.text-muted-dark} separan o acompañan contenido sobre fondos claros.
+El fondo es {colors.surface}, la lectura principal {colors.primary} y la secundaria {colors.secondary}. Las tarjetas y el marco de galería usan blanco puro {colors.surface-card}; esa diferencia respecto al fondo delimita los planos sin contornos ni sombras permanentes. El índice de áreas usa {colors.primary} como banda oscura, con tarjetas claras. La franja de marcas conserva el fondo claro.
 
-- **Primary (#0C0C0C):** tinta profunda para titulares y texto principal sobre fondos claros.
-- **On-primary (#F4F4F4):** lectura sobre tinta profunda y sobre el botón principal.
-- **Secondary (#4F4F4F):** texto secundario oscuro y bordes de 1 px en controles.
-- **Tertiary (#105EF9):** azul de enlaces y de algunas acciones. Es el único acento de navegación.
-- **On-tertiary (#F4F4F4):** texto sobre el azul de acción.
-- **Surface (#F4F4F4):** base de la página y de las superficies claras; la base neutra del sistema.
-- **Surface-dark (#222222):** superficie de bloques oscuros.
-- **Surface-raised (#393939):** nivel intermedio y estado presionado.
-- **Surface-muted (#DADADA):** etiquetas y separadores sobre claro.
-- **Text-muted-dark (#BFBFBF):** texto secundario sobre superficies oscuras.
-- **Accent-graphic (#0000F4):** azul con papel gráfico sobre fondos claros; no se usa en texto pequeño.
-- **Accent-detail (#EF1889):** rosa de detalle ocasional, asociado a una pieza o sección. Nunca es un segundo color de navegación.
+{colors.tertiary} identifica navegación y acentos de interacción. {colors.accent-graphic} aparece en la cinta «branding» y en recursos gráficos; {colors.accent-detail} destaca «forma». En la frase se admiten azul y rosa porque distinguen idea y realización, sin crear dos acciones de navegación. Los colores de Quest y TipoFilicko pertenecen a esos proyectos y no amplían la paleta de la marca personal.
 
-Contraste: sobre {colors.surface}, {colors.tertiary} alcanza aproximadamente 4.78:1, y la misma relación se mantiene al colocar {colors.on-tertiary} sobre un botón azul. Sobre {colors.primary}, el contraste de {colors.tertiary} baja a 3.72:1 y el de {colors.accent-graphic} a 2.15:1; por eso los enlaces pequeños sobre oscuro se mantienen claros y subrayados. El rosa {colors.accent-detail} queda fuera del texto pequeño sobre fondo claro.
+Los 16 roles cromáticos corresponden a 11 valores únicos. Los alias on-primary, on-tertiary y on-surface-dark comparten #F4F4F4; on-surface comparte #0C0C0C y on-surface-muted comparte #222222. La guía agrupa los valores repetidos. Surface-dark, surface-raised, surface-muted y text-muted-dark sirven para muestras y estados de componentes, no implican un modo oscuro.
 
-La página usa fondo {colors.surface}, lectura {colors.on-surface} y texto secundario {colors.secondary}. {colors.surface-dark} queda disponible para componentes oscuros puntuales, con {colors.on-surface-dark} como lectura y enlaces claros subrayados. No hay selector de tema.
-
-Un estado activo, un error o un enlace se reconoce también por su forma, su mensaje o un subrayado, no solo por el color. Cada zona mantiene un solo acento dominante.
-
-Los 15 roles cromáticos se construyen con 10 valores únicos. En la guía visual cada valor se muestra una vez con todos sus roles: la repetición de un hexadecimal no crea un color nuevo. Esta distinción evita inflar artificialmente la paleta.
+Sobre #F4F4F4, #0C0C0C ofrece 17.79:1, #4F4F4F 7.45:1 y #105EF9 4.78:1. El rosa #EF1889 ofrece aproximadamente 3.70:1: se limita a texto grande o detalles sin información esencial. Sobre oscuro, los enlaces pequeños deben ser claros y subrayados. Una revisión de estos pares no equivale a una certificación de accesibilidad de toda la página.
 
 ## Typography
 
-**DM Sans** es la voz más visible: Bold concentra la fuerza del nombre y los titulares, y Medium acompaña los subtítulos, la navegación y los botones. **Manrope** Regular se usa en las descripciones y los textos de lectura; su Medium queda disponible para etiquetas que necesitan un poco más de presencia.
+DM Sans variable construye nombre, titulares y controles; Manrope variable sostiene párrafos y metadatos. Se cargan localmente en WOFF2. DM Sans permite pesos 100–1000 y Manrope 200–800. No se usa cursiva en las interacciones actuales.
 
-Ambas son familias variables y se sirven desde `assets/fonts/` en formato WOFF2: DM Sans cubre pesos de 100 a 1000 y ajusta su tamaño óptico entre 9 y 40 según el tamaño de letra; Manrope cubre pesos de 200 a 800. Con una sola descarga por familia se obtienen todos los pesos del sistema.
+El nombre «aldo iván» está en minúsculas y peso 200 en reposo. Cada letra responde a la proximidad del cursor; sus pesos máximos progresan 200, 300, 400, 500, 600, 700, 800 y 900. La primera «a» conserva su peso pero participa en color y escala. El crecimiento máximo es 12 % y el desplazamiento vertical 3 px, sin cambiar los espacios reservados. El logotipo vectorial permanece en la navegación; la portada emplea texto real.
 
-| Nivel | Escritorio (tamaño / interlineado) | Móvil (tamaño / interlineado) |
-|:--|:--|:--|
-| Apertura | 80 / 80 px | 44 / 46 px |
-| Sección | 48 / 52 px | 32 / 36 px |
-| Proyecto | 28 / 32 px | 24 / 28 px |
-| Subtítulo | 20 / 26 px | 20 / 26 px |
-| Texto de lectura | 18 / 28 px | 16 / 25 px |
-| Menús y botones | 16 / 20 px | 16 / 20 px |
-| Metadatos | 14 / 20 px | 14 / 20 px |
-| Notas auxiliares | 12 / 16 px | 12 / 16 px |
+La frase «me gusta entender una idea antes de darle forma», sin punto final, parte de peso 300. Solo reacciona la fila más cercana al cursor; «idea» y «forma» pueden alcanzar peso 700 y sus acentos azul y rosa. La escala máxima es 6 % y el desplazamiento 0.8 px. El peso y el color se interpolan suavemente. En pantallas táctiles los acentos se muestran sin exigir hover.
 
-El primer valor indica el tamaño y el segundo, el interlineado. Las notas auxiliares pueden usar 12 / 16 px siempre que no contengan información esencial.
+La escala base de la guía conserva apertura 80/80, sección 48/52, subtítulo 20/26, cuerpo 18/28, navegación 16/20, metadatos 14/20 y notas 12/16 px. No todos estos ejemplos son titulares de la landing. El título de proyecto usa 56/58 px en escritorio y escala desde 32 px en móvil. Los rótulos de grupo usan 28/32 px.
 
-En titulares de 80 px se reduce el espacio entre letras 2 px ({typography.display-xl.letterSpacing}); en el nombre o en una palabra corta se puede llegar a 3 px después de revisar la unión visual entre caracteres. En titulares de 44 px y en los subtítulos se parte de una reducción de 1 px ({typography.display-xl-mobile.letterSpacing} y {typography.subtitle.letterSpacing}). Los botones y los párrafos conservan el espaciado original.
-
-El ajuste está calibrado para DM Sans: si una letra toca a la siguiente, se abre el espaciado antes que reducir el tamaño del titular. Cada caso se revisa para que las letras no choquen y la lectura siga siendo clara.
-
-Las mayúsculas se concentran en el nombre y en mensajes breves. Los títulos largos pueden ocupar varias líneas y conservan altura suficiente. La jerarquía depende del tamaño, el peso y la posición, con espacio alrededor de cada nivel. Nunca se fuerza una familia sustituta: si DM Sans no está disponible, se conserva la escala y el peso antes que cambiar el carácter tipográfico.
-
-La comparación entre escritorio y móvil muestra los tamaños reales de cada token. El selector y las muestras cambian con una transición de 220 ms; la preferencia por movimiento reducido elimina esa animación.
+La portada tiene tamaños fluidos para aprovechar la altura: el nombre alcanza 106 px y la frase 70 px; en móvil el nombre varía entre 52 y 78 px y la frase entre 30 y 48 px. El interletrado del nombre es −0.05 em y el de la frase −0.04 em. Estos ajustes propios de portada se distinguen de la escala base; no se afirma que toda pantalla use tamaños fijos. Con zoom de lectura se permite desplazamiento vertical antes que recortar contenido.
 
 ## Layout
 
-En escritorio se trabaja con 12 columnas, calles de {spacing.gutter} y un ancho de contenido máximo de 1200 px, con márgenes mínimos de {spacing.margin}. Una imagen especial puede extenderse hasta 1440 px, mientras sus textos conservan la alineación principal. Se alternan proyectos de mayor tamaño con otros más contenidos para evitar una sucesión de bloques idénticos.
+El contenedor del portafolio mide como máximo 1296 px incluyendo márgenes internos. Desde 1024 px los márgenes son 48 px: el contenido útil máximo es 1200 px. Por debajo de 600 px son 20 px; entre 600 y 1023 px, 32 px. La separación general entre secciones es 56, 72 y 96 px respectivamente. La base de espaciado es 4 px, con ajustes locales de 10 y 14 px en las miniaturas.
 
-La retícula parte de una base de 4 px y de la escala {spacing.xxs}, {spacing.xs}, {spacing.sm}, {spacing.md}, {spacing.lg}, {spacing.xl}, {spacing.xxl}, {spacing.xxxl}, {spacing.section} y {spacing.pause}. Dentro de un componente se dejan entre 12 y 24 px; entre bloques relacionados, de 24 a 32 px. Las secciones principales se separan {spacing.section} en escritorio y {spacing.section-mobile} en móvil. {spacing.pause} se reserva para una pausa importante entre temas. Los párrafos mantienen entre 55 y 70 caracteres por línea.
+Las 12 columnas de la guía son una referencia editorial, no doce columnas obligatorias en todos los componentes. Los proyectos usan dos zonas proporcionales 42/58 en escritorio, separadas 32 px; por debajo de 1024 px pasan a una columna, con texto antes de la galería. La portada centra verticalmente personaje, nombre, profesión y frase. El índice y la cinta de marcas se extienden a todo el ancho.
 
-Puntos de quiebre:
-
-- **Menos de 600 px:** una columna con márgenes de {spacing.margin-mobile}; bloques relacionados separados 16 px y secciones a {spacing.section-mobile}.
-- **De 600 a 1023 px:** 8 columnas, márgenes de {spacing.margin-tablet}, calles de {spacing.gutter-tablet} y separaciones principales de {spacing.section-tablet}.
-- **Desde 1024 px:** retícula de 12 columnas y secciones separadas {spacing.section}.
-- **Desde 1440 px:** el contenido se mantiene centrado dentro del ancho definido.
-
-En móvil se reordenan las composiciones asimétricas según su importancia. La navegación puede condensarse en un menú rotulado; las barras flotantes respetan las zonas seguras y dejan espacio para no tapar el final de la página. Los elementos esenciales funcionan con toque y teclado, además del cursor.
-
-Las portadas provisionales de los proyectos usan marcos rectangulares con radio {rounded.xl}. El módulo presenta una vista principal grande y cuatro miniaturas superpuestas en la base: portada, sistema, detalle y aplicación. Cada miniatura cambia la vista principal y tiene un área de control amplia. El azul {colors.tertiary} marca una vista de acento y el rosa {colors.accent-detail} solo un indicador pequeño; las imágenes reales conservarán su color. El cristal se reserva para la navegación y una etiqueta flotante de estado sobre el módulo, nunca para cubrir texto de lectura.
+La imagen principal está a la derecha y la tira de miniaturas se superpone desde la izquierda en la parte baja. Su soporte opaco, del color del fondo, genera el hueco entre planos; no es cristal ni transparencia. Se ven aproximadamente tres miniaturas y fragmentos de las siguientes durante el movimiento. En móvil la tira queda al pie de la imagen. Los marcos mantienen su geometría cuando cambia el contenido.
 
 ## Elevation & Depth
 
-La profundidad se concentra en la navegación flotante y, cuando se necesita, en una barra de acciones superpuesta a una imagen. En la página clara se usa {colors.surface} al 88 %, desenfoque de fondo de 16 px y borde de 1 px en {colors.primary} al 12 %. El texto y los íconos permanecen completamente opacos.
+El cristal se reserva a la cabecera: superficie clara al 88 % y desenfoque de 16 px. Las galerías y miniaturas son sólidas. Las flechas y controles de zoom son círculos blancos con una sombra ligera de 0 2px 12px y negro al 12.5 %. Las tarjetas no llevan sombra permanente.
 
-Las fotografías, los proyectos y los formularios conservan superficies sólidas. No se acumulan capas transparentes en una misma zona. Si el fondo dificulta la lectura o se desactiva la transparencia, la navegación usa {colors.surface} sólido.
+La entrada de secciones combina 28 px de desplazamiento y un fundido de 550 ms, repetido al volver a entrar. El índice de áreas se mueve en bucle hacia la izquierda en ciclos de 20 s; al señalar una tarjeta baja al 40 % de velocidad y desenfoca las demás. La cinta «branding» se desplaza aproximadamente 75 px/s. Las miniaturas avanzan 85 px/s y bajan a 45 px/s bajo el cursor; el gesto horizontal permite acelerar o retroceder. El foco de teclado detiene la tira de miniaturas.
 
-Sombras permitidas:
-
-- Navegación flotante: desplazamiento horizontal 0 px, vertical 4 px, desenfoque 16 px, {colors.primary} al 8 %.
-- Menú: 0 px, 8 px y 24 px, al 12 %.
-- Modales: opacos, con un velo negro al 40 % detrás.
-- Tarjetas de proyecto: sin sombra permanente; se integran al fondo.
-
-Las transiciones duran entre 160 y 220 ms y se concentran en color, borde y pequeños cambios de escala o posición. Al solicitar movimiento reducido se eliminan los desplazamientos y los aumentos de imagen. La portada admite un ciclo breve del personaje, sin sonido y sin controles, porque presenta la faceta de movimiento del autor. No se repiten animaciones decorativas en los proyectos.
+El cambio de imagen real usa un fundido de 380 ms, con la imagen entrante ya ajustada al marco. El zoom interpola únicamente la transformación durante 240 ms; el arrastre es directo para evitar retrasos. El control Pausar detiene las cintas, las miniaturas y sustituye el personaje por su imagen fija. La preferencia de movimiento reducido elimina los ciclos y transiciones y mantiene el acceso manual.
 
 ## Shapes
 
-Los redondeos se concentran en los controles y las capas flotantes. Botones y campos usan {rounded.md} (12 px); la navegación y los contenedores destacados, {rounded.lg} (16 px); los modales, {rounded.xl} (20 px). Las portadas conservan bordes rectos ({rounded.none}) o un radio de {rounded.sm} (4 px).
+Las galerías y miniaturas usan {rounded.xl}, 20 px, sin stroke. El logo inicial aparece completo, centrado, al 70 % del marco y ligeramente elevado; los mockups llenan el marco y pueden recorrerse mediante arrastre. El recorte nunca se presenta como una imagen completa.
 
-La forma de píldora ({rounded.full}) queda para filtros y etiquetas; los círculos, para avatares y controles de ícono. Las imágenes mantienen una geometría más contenida para conservar el carácter editorial.
-
-El nombre funciona como firma tipográfica; no se incorporan símbolos decorativos ajenos a la identidad.
+Botones generales usan 12 px, muestras de navegación flotante 16 px y controles de galería una forma circular de 38 px. Las tarjetas vectoriales del índice conservan su forma original; no deben recortarse para simular una geometría distinta. El personaje no lleva marco.
 
 ## Components
 
-**Navegación.** Flota sobre el contenido con el tratamiento de cristal descrito en Elevation & Depth y usa nombres directos: Proyectos, Sobre mí y Contacto. Los enlaces se leen a {typography.nav}; el destino activo se distingue por peso, posición o subrayado, no solo por color.
+**Portada.** Personaje animado transparente arriba; nombre reactivo debajo; rótulo «diseñador gráfico» y frase en tres líneas. No tiene botones de llamada a la acción ni párrafo adicional. La condición de estudiante se explica en Sobre mí.
 
-**Presentación y proyectos.** La entrada combina el logotipo vectorial del nombre con un juego progresivo de pesos, del trazo ligero de la «a» al negro de la «n», y sitúa el personaje a su lado. La frase «me gusta entender una idea antes de darle forma» lleva el peso de la presentación; «idea» y «forma» parten en DM Sans Light; al pasar el cursor cambian con un fundido breve a DM Sans Medium Italic y toman {colors.tertiary} y {colors.accent-detail}. En dispositivos táctiles los acentos permanecen visibles sin depender del cursor. Debajo, un texto breve nombra la condición de estudiante y el proceso de observación y prueba. Un índice horizontal de tres piezas vectoriales numeradas sigue a la portada y enlaza con Branding, Campañas y Motion Graphics. La siguiente pieza queda parcialmente visible para indicar el desplazamiento; los controles y el gesto táctil recorren el índice. Sobre mí precede a los proyectos; después, los proyectos ocupan la mayor parte del recorrido y el contacto lo cierra. El personaje aparece solo en la entrada para que no compita con las imágenes de los trabajos. Cada proyecto abre con su nombre, categoría y año. La explicación conecta el problema con la idea y las decisiones visuales antes de mostrar las aplicaciones. Se incluye la participación y los créditos cuando el trabajo es compartido.
+**Navegación.** Enlaces al inicio, Sobre mí, Proyectos y Contacto. En móvil, un botón Menú abre los mismos destinos. Pausar permite detener el movimiento automático. El foco debe ser visible; los enlaces siguen funcionando sin depender del efecto del cursor.
 
-**Tarjetas de proyecto.** Cada entrada reúne una imagen, el nombre, la categoría y el año, separados entre 12 y 16 px. La imagen y el título abren el mismo destino. Al pasar el cursor se subraya el nombre y la imagen puede crecer hasta un 2 % dentro de su marco. La fotografía personal puede ser monocromática; las piezas del portafolio conservan los colores que necesitan para entenderse. Sin sombra permanente.
+**Índice de áreas.** Tres tarjetas enlazan Branding, Campañas y Motion Graphics. Sus copias permiten continuidad visual y se excluyen del orden de tabulación. El gesto horizontal no debe bloquear el desplazamiento vertical de la página.
 
-**Botones.** El botón principal usa {components.button-primary.backgroundColor} con texto {components.button-primary.textColor}, altura mínima de {components.button-primary.height}, espacio horizontal de {components.button-primary.padding} y radio de {rounded.md}. Al pasar el cursor sube a {components.button-primary-hover.backgroundColor} y al presionarlo baja a {components.button-primary-active.backgroundColor}; el cambio de luminosidad es visible para que el reposo y el hover no se confundan. Sobre oscuro se usa la versión clara. El botón azul {components.button-accent.backgroundColor} se reserva para una acción que requiera énfasis, mantiene texto {components.button-accent.textColor} y al pasar el cursor cambia a {components.button-accent-hover.backgroundColor}; al presionarlo pasa a {components.button-accent-active.backgroundColor} con texto {components.button-accent-active.textColor}.
+**Franja de marcas.** Quest, TipoFilicko y Qatar enlazan a sus módulos. Detrás circula «branding» en azul gráfico; un desvanecido del color de fondo de 25 px alrededor del grupo evita que compita con los logotipos. Los recuadros son blancos y sin contorno.
 
-**Botones secundarios y controles de ícono.** Los secundarios tienen fondo claro, texto oscuro y borde de 1 px en {colors.secondary}; al pasar el cursor invierten a {components.button-secondary-hover.backgroundColor} con texto {components.button-secondary-hover.textColor}, y al presionarlos usan {components.button-secondary-active.backgroundColor}. Los controles de ícono disponen de un área mínima de 44 × 44 px y un nombre accesible.
+**Galería de proyecto.** Nombre, categoría, descripción y alcance acompañan una imagen grande. Quest comienza con su logotipo y tiene cinco mockups; TipoFilicko comienza con su logotipo y tiene nueve. Las miniaturas, las flechas y el gesto horizontal cambian la imagen. Los mockups admiten zoom de 1 a 2.5 en pasos de 0.25, centrado en la posición reciente del cursor, y arrastre limitado a los bordes. El logo no se amplía. Al cambiar de imagen se restablece el encuadre. Las flechas del teclado permiten desplazar el mockup cuando tiene foco.
 
-**Retrato del personaje.** La portada usa una animación transparente de cinco segundos derivada del video original. Se reproduce en bucle, sin sonido ni controles; al preferir menos movimiento se muestra una imagen fija. La transparencia permite que {colors.surface} sea el único fondo y evita un recuadro alrededor del dibujo. El personaje aparece junto a la firma, una sola vez y sin marco. Es una pieza personal, no un trabajo de cliente.
+**Contenido pendiente.** Qatar, MACABRO FICH, movo, Tipognoma y Robot Dreams conservan vistas provisionales. No existen páginas de caso separadas ni resultados documentados en ellas. Se incorporarán piezas, explicaciones de participación y créditos cuando estén disponibles.
 
-**Mensajes de error.** El texto explica el problema junto al campo y se acompaña de un punto de {components.error-marker.size} en {components.error-marker.backgroundColor}; el color no es la única señal. El texto secundario sobre oscuro usa {components.dark-secondary-text.textColor}.
-
-**Etiquetas y filtros.** Las etiquetas usan {components.tag.backgroundColor} con texto {components.tag.textColor} a {typography.meta.fontSize} / {typography.meta.lineHeight} y forma de píldora. Los filtros seleccionados invierten a fondo oscuro y texto claro ({components.tag-selected.backgroundColor} y {components.tag-selected.textColor}).
-
-**Enlaces.** En fondo claro, los enlaces usan {components.link.textColor} y se reconocen por el subrayado. Sobre fondos oscuros se mantienen claros y subrayados; el azul no se usa en texto pequeño sobre oscuro.
-
-**Contacto y formularios.** El contacto ofrece una acción directa y reconocible. Si se incluye un formulario, los campos miden al menos 48 px de alto y usan fondo {components.input.backgroundColor}, texto {components.input.textColor} y borde de 1 px en {colors.secondary}. Las etiquetas visibles van a 14 / 20 px; el texto de ejemplo nunca las sustituye. El foco incorpora un contorno azul sobre claro y uno claro sobre oscuro. Los errores aparecen explicados junto al campo.
-
-**Modales.** Son opacos, con radio {rounded.xl}, texto {components.modal.textColor} sobre {components.modal.backgroundColor}, y un velo negro al 40 % detrás.
-
-Los encabezados, muestras y componentes se animan individualmente cada vez que entran en el área visible y se restablecen al salir, con desplazamiento vertical máximo de 36 px y fundido de 620 ms. El contenido permanece disponible sin JavaScript y se muestra de inmediato cuando se solicita movimiento reducido. La página abre desde la portada, salvo que se siga un enlace directo a una sección. Esta entrada acompaña el recorrido; no altera el orden de lectura.
+**Contacto.** Enlace a Instagram @alivann y retorno al inicio. No hay formulario de envío. Botones generales, campos, etiquetas y modal de la guía son ejemplos de reserva; no se presentan como funciones activas del portafolio.
 
 ## Do's and Don'ts
 
-- **Sí:** mantener una acción principal por bloque y un solo acento dominante por sección.
-- **No:** convertir el rosa {colors.accent-detail} en un segundo color de navegación ni usarlo en texto pequeño sobre fondo claro.
-- **Sí:** conservar el color de las imágenes de los proyectos cuando forma parte del trabajo.
-- **No:** aplicar el efecto de cristal a párrafos, formularios o a todas las tarjetas; se reserva para la navegación y las acciones flotantes.
-- **Sí:** mantener los títulos compactos con fuerza, sin perder legibilidad ni desbordar la pantalla.
-- **No:** usar el azul en texto pequeño sobre fondos oscuros; los enlaces mantienen subrayado y los estados incluyen señales adicionales al color.
-- **Sí:** sostener el contraste WCAG AA (4.5:1) en texto normal y ofrecer una superficie sólida cuando no haya transparencia.
-- **No:** acumular capas transparentes en una misma zona ni añadir sombra permanente a las tarjetas de proyecto.
-- **Sí:** respetar la preferencia de movimiento reducido, eliminando desplazamientos y aumentos de imagen.
-- **No:** incorporar animaciones continuas en los proyectos; el ciclo breve del personaje queda reservado a la portada y se detiene con la preferencia de movimiento reducido.
-- **Sí:** revisar qué aporta cada recurso, qué hace más fácil y si conserva la claridad en móvil.
-- **Sí:** mantener una única base clara y reservar {colors.surface-dark} para bloques puntuales.
-- **No:** introducir un selector de tema ni colores ajenos a la paleta.
-- **No:** añadir símbolos decorativos ajenos a la identidad tipográfica del nombre.
+- Mantener el mismo orden narrativo en móvil y escritorio; permitir lectura y navegación sin hover.
+- Conservar el color original de cada proyecto y distinguir propuestas conceptuales de encargos oficiales.
+- Mantener blancos sólidos, radios de 20 px y encuadres estables durante las transiciones.
+- Usar el movimiento para orientar y explorar, con pausa y alternativa reducida; no añadir más efectos a las galerías.
+- No sustituir explicaciones de concepto, participación y créditos por mockups. Las galerías muestran ejecución, pero todavía no constituyen casos completos.
+- No usar rosa en texto pequeño sobre claro ni azul de acción en texto pequeño sobre oscuro.
+- No describir componentes de reserva o páginas futuras como prestaciones ya publicadas.

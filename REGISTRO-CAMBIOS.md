@@ -231,3 +231,12 @@ Cuando cierres Word, este párrafo se añade al final de la introducción del do
 
 - El SVG de la frase sirve como referencia de composición. La versión web usa texto real para permitir cambio por palabra y conservar lectura adaptable.
 - «Idea» y «forma» parten en DM Sans Light. Al pasar el cursor, una capa DM Sans Medium Italic aparece con fundido breve y toma el azul o el rosa. En pantallas táctiles los acentos se muestran sin depender de hover; con movimiento reducido no hay transición.
+
+
+## 13 de noviembre de 2026 — Revisión de coherencia y publicación
+
+- Consolidación de DESIGN.md, CV.md y ambos Word: base clara, portada reactiva, orden de secciones, galerías reales de Quest y TipoFilicko, movimiento, zoom y arrastre. Se eliminaron reglas antiguas contradictorias y se separaron componentes de reserva y casos futuros.
+- Guía visual actualizada con blanco puro para tarjetas, 11 tonos y 16 roles, muestra de galería y explicación de interacciones actuales. Corrección de la referencia de JavaScript que interrumpía sus animaciones.
+- Correcciones funcionales acotadas en la landing: menú móvil con estilo consistente, enlace de Instagram y control para pausar movimiento automático. Las miniaturas se detienen con foco de teclado. Se conserva la composición aprobada.
+- Verificación local en Chrome: imágenes y enlaces internos sin fallos; cambio de vista y zoom en ambas galerías; movimiento de miniaturas, pausa, menú a 390 px y movimiento reducido. Sin errores de JavaScript. Word renderizados y revisados visualmente. No constituye una auditoría completa de WCAG ni una prueba física en todos los dispositivos.
+- Pendiente para entrega final: piezas de cinco proyectos, explicaciones de proceso, participación y créditos.
