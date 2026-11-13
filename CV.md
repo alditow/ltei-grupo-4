@@ -6,12 +6,12 @@ Presentar siete proyectos de branding, campañas y motion graphics para mostrar 
 
 ## Recorrido de la página principal
 
-1. Inicio: composición centrada con logotipo del nombre de peso progresivo, personaje personal animado, frase de presentación y accesos a Sobre mí y Proyectos.
+1. Inicio: composición centrada con logotipo del nombre de peso progresivo, personaje personal animado y frase de presentación. A continuación, un índice horizontal enlaza las tres áreas de trabajo.
 2. Sobre mí: presentación breve en primera persona sobre formación, prácticas y modo de colaborar.
 3. Proyectos: siete trabajos agrupados por área, con módulos visuales y texto explicativo.
 4. Contacto: invitación a conversar e Instagram como único canal confirmado.
 
-La navegación muestra el nombre como enlace al inicio y los destinos Sobre mí, Proyectos y Contacto. En móvil conserva esos destinos en un menú rotulado. El personaje aparece una vez, junto al logotipo en la portada, en una animación transparente, silenciosa y en bucle; una imagen fija cubre la preferencia de movimiento reducido. No se repite el mismo recurso antes de los trabajos. El pie muestra el nombre, el año de publicación y un enlace al inicio.
+El índice de contenido, situado entre la portada y Sobre mí, permite recorrer horizontalmente Branding, Campañas y Motion Graphics mediante desplazamiento táctil o controles. Cada tarjeta enlaza con su grupo; muestra parte de la siguiente tarjeta para indicar continuidad. La navegación muestra el nombre como enlace al inicio y los destinos Sobre mí, Proyectos y Contacto. En móvil conserva esos destinos en un menú rotulado. El personaje aparece una vez, junto al logotipo en la portada, en una animación transparente, silenciosa y en bucle; una imagen fija cubre la preferencia de movimiento reducido. No se repite el mismo recurso antes de los trabajos. El pie muestra el nombre, el año de publicación y un enlace al inicio.
 
 ## Proyectos
 
