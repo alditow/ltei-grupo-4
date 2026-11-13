@@ -11,7 +11,7 @@ Presentar siete proyectos de branding, campañas y motion graphics para mostrar 
 3. Proyectos: siete trabajos agrupados por área, con módulos visuales y texto explicativo.
 4. Contacto: invitación a conversar e Instagram como único canal confirmado.
 
-La navegación muestra el nombre como enlace al inicio y los destinos Sobre mí, Proyectos y Contacto. En móvil conserva esos destinos en un menú rotulado. El personaje aparece una vez, en la portada, para no repetir el mismo recurso antes de los trabajos. El pie muestra el nombre, el año de publicación y un enlace al inicio.
+La navegación muestra el nombre como enlace al inicio y los destinos Sobre mí, Proyectos y Contacto. En móvil conserva esos destinos en un menú rotulado. El personaje aparece una vez, en la portada, en una animación breve, silenciosa y en bucle; una imagen fija cubre la preferencia de movimiento reducido. No se repite el mismo recurso antes de los trabajos. El pie muestra el nombre, el año de publicación y un enlace al inicio.
 
 ## Proyectos
 

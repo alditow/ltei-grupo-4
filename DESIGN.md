@@ -175,10 +175,10 @@ components:
     textColor: "{colors.text-muted-dark}"
     typography: "{typography.meta}"
   hero-portrait:
-    backgroundColor: "{colors.surface-muted}"
-    textColor: "{colors.on-surface-muted}"
+    backgroundColor: "{colors.surface}"
+    textColor: "{colors.on-surface}"
     typography: "{typography.note}"
-    rounded: "{rounded.sm}"
+    rounded: "{rounded.none}"
   error-marker:
     backgroundColor: "{colors.accent-detail}"
     rounded: "{rounded.full}"
@@ -324,7 +324,7 @@ Sombras permitidas:
 - Modales: opacos, con un velo negro al 40 % detrás.
 - Tarjetas de proyecto: sin sombra permanente; se integran al fondo.
 
-Las transiciones duran entre 160 y 220 ms y se concentran en color, borde y pequeños cambios de escala o posición. El cambio entre tema claro y oscuro usa un fundido de 320 ms sobre color, borde, sombra y filtro para que el paso no sea brusco. Al solicitar movimiento reducido se eliminan los desplazamientos, los aumentos de imagen y el fundido de tema. No se incluyen animaciones continuas que interrumpan la revisión de los proyectos.
+Las transiciones duran entre 160 y 220 ms y se concentran en color, borde y pequeños cambios de escala o posición. El cambio entre tema claro y oscuro usa un fundido de 320 ms sobre color, borde, sombra y filtro para que el paso no sea brusco. Al solicitar movimiento reducido se eliminan los desplazamientos, los aumentos de imagen y el fundido de tema. La portada admite un ciclo breve del personaje, sin sonido y sin controles, porque presenta la faceta de movimiento del autor. No se repiten animaciones decorativas en los proyectos.
 
 ## Shapes
 
@@ -348,7 +348,7 @@ El nombre funciona como firma tipográfica; no se incorporan símbolos decorativ
 
 **Cambio de tema.** El control de tema es un botón circular de {components.theme-toggle.size} con {components.theme-toggle.backgroundColor} y {components.theme-toggle.textColor}; en oscuro usa {components.theme-toggle-dark.backgroundColor} y {components.theme-toggle-dark.textColor}. Muestra el ícono de luna cuando el tema claro está activo y el de sol cuando está el oscuro, con una transición de 320 ms. Mantiene `aria-pressed`, una etiqueta que nombra la acción siguiente (“Activar modo oscuro” o “Activar modo claro”) y guarda la preferencia en el navegador.
 
-**Retrato del personaje.** La portada y la tarjeta personal muestran una ilustración estática, sin video ni controles de reproducción. En claro se usa la versión oscura de tinta; en el tema oscuro se muestra la variante blanca `yo-invertido.svg`. Ambas comparten el mismo marco de composición y se cruzan con un fundido de 460 ms. La variante blanca se amplía ópticamente al 108 % para compensar su margen y conservar el tamaño percibido. La imagen se presenta libre, sin marco ni fondo de tarjeta de proyecto. Es una pieza personal y no se clasifica como trabajo de cliente.
+**Retrato del personaje.** La portada usa una animación de cinco segundos que se reproduce automáticamente, en silencio y en bucle, sin controles. Dos versiones comprimidas del mismo original respetan los temas: tinta oscura sobre {colors.surface} y tinta clara sobre {colors.surface-dark}. Ambas tienen idéntico recorte y tamaño, y se cruzan con un fundido de 460 ms. La imagen fija correspondiente aparece si el video no se reproduce o si la persona prefiere menos movimiento. La tarjeta personal de la referencia visual conserva la ilustración estática. El personaje se presenta libre, sin marco ni fondo de tarjeta de proyecto. Es una pieza personal, no un trabajo de cliente.
 
 **Mensajes de error.** El texto explica el problema junto al campo y se acompaña de un punto de {components.error-marker.size} en {components.error-marker.backgroundColor}; el color no es la única señal. El texto secundario sobre oscuro usa {components.dark-secondary-text.textColor}.
 
@@ -373,7 +373,7 @@ Los encabezados, muestras y componentes se animan individualmente cada vez que e
 - **Sí:** sostener el contraste WCAG AA (4.5:1) en texto normal y ofrecer una superficie sólida cuando no haya transparencia.
 - **No:** acumular capas transparentes en una misma zona ni añadir sombra permanente a las tarjetas de proyecto.
 - **Sí:** respetar la preferencia de movimiento reducido, eliminando desplazamientos y aumentos de imagen.
-- **No:** incorporar animaciones continuas que interrumpan la revisión de los proyectos.
+- **No:** incorporar animaciones continuas en los proyectos; el ciclo breve del personaje queda reservado a la portada y se detiene con la preferencia de movimiento reducido.
 - **Sí:** revisar qué aporta cada recurso, qué hace más fácil y si conserva la claridad en móvil.
 - **Sí:** ofrecer tema claro y oscuro con la misma jerarquía, recordar la preferencia y anunciar el cambio.
 - **No:** usar el azul en texto pequeño sobre el tema oscuro ni introducir colores que no existan en la paleta.

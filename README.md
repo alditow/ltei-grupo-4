@@ -7,3 +7,5 @@ Las imágenes de los proyectos son muestras provisionales. Se sustituirán por p
 El diseño y la arquitectura de información se documentan en `DESIGN.md`, `CV.md` y los archivos de Word incluidos. `REGISTRO-CAMBIOS.md` recoge las decisiones y cambios para mantenerlos alineados con las páginas.
 
 Para verlo en el navegador, abre `index.html`.
+
+Sitio publicado: [portafolio](https://alditow.github.io/ltei-grupo-4/) y [sistema de diseño](https://alditow.github.io/ltei-grupo-4/design.html).

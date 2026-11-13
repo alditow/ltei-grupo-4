@@ -213,3 +213,9 @@ Cuando cierres Word, este párrafo se añade al final de la introducción del do
 - El módulo de cada proyecto sitúa el texto a la izquierda y una vista principal grande a la derecha en escritorio; en móvil se apilan.
 - Cuatro miniaturas superpuestas cambian la vista principal: portada, sistema, detalle y aplicación. Las vistas siguen rotuladas como provisionales.
 - Esta composición sustituye el carrusel horizontal anterior. Los documentos de sistema y arquitectura se actualizan con la misma regla.
+
+## 2026-11-12 · Personaje animado en portada
+
+- La portada sustituye las ilustraciones estáticas por un ciclo de cinco segundos, automático, silencioso y sin controles. Se conserva una imagen fija para la preferencia de movimiento reducido y para carga inicial.
+- El original `assets/yo.mov` se mantiene solo como fuente local. Para la web se generaron dos versiones H.264 ligeras, una por tema, con el mismo recorte y tamaño para evitar saltos al cambiar de tema.
+- Se actualizaron `index.html`, `DESIGN.md`, `CV.md` y los documentos de Word de sistema de diseño y arquitectura para describir la misma decisión. La tarjeta personal de `design.html` permanece estática porque es una muestra del componente, no una segunda portada.
