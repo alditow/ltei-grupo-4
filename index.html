@@ -16,7 +16,7 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}.reveal{opacity:1;transform:none}}
 
 .wordmark img{display:block;width:132px;height:auto}.hero-main{max-width:1100px}.hero-lockup{display:grid;grid-template-columns:minmax(0,1fr) minmax(180px,.78fr);align-items:center;gap:clamp(12px,4vw,48px);max-width:850px;margin:0 auto clamp(24px,4vw,48px)}.hero-signature{text-align:right;align-self:end;padding-bottom:clamp(12px,4vw,48px)}.hero h1{margin:0;line-height:1}.hero h1 img{display:block;width:min(100%,500px);height:auto}.hero-signature p{font:500 clamp(16px,2vw,28px)/1.2 var(--font-display);letter-spacing:-.045em;margin:0}.hero-portrait{width:min(100%,320px);aspect-ratio:12/13;margin:0}.hero-portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;transition:none}.hero-portrait .hero-still{display:none}.hero-statement{font:300 clamp(36px,6.2vw,82px)/1.06 var(--font-display);letter-spacing:-.055em;max-width:20ch;margin:0 auto 24px;text-align:center}.hero-statement span{display:block}.hero-statement em{font-style:italic;font-weight:700}.hero-statement .blue{color:var(--tertiary)}.hero-statement .pink{color:var(--accent-detail)}.hero-copy{max-width:52ch;margin-inline:auto}@media(max-width:600px){.wordmark img{width:110px}.hero-lockup{grid-template-columns:minmax(0,1fr) minmax(130px,.8fr);gap:8px}.hero-signature{padding-bottom:18px}.hero-signature p{font-size:15px}.hero-portrait{width:100%}.hero-statement{font-size:clamp(32px,8.6vw,48px);letter-spacing:-.055em}}@media(prefers-reduced-motion:reduce){.hero-portrait .hero-animation{display:none}.hero-portrait .hero-still{display:block}}
-.hero-statement .accent-blue,.hero-statement .accent-pink{display:inline}.hero-statement .reactive-letter{display:inline-block;transform-origin:50% 75%;will-change:transform;position:relative}.hero-statement .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}@media(hover:none),(prefers-reduced-motion:reduce){.hero-statement .accent-blue{color:var(--tertiary)}.hero-statement .accent-pink{color:var(--accent-detail)}.hero-statement .reactive-letter{will-change:auto}}</style>
+.hero-statement .accent-blue,.hero-statement .accent-pink{display:inline}.hero-statement .reactive-letter{display:inline-block;transform-origin:50% 75%;position:relative;text-align:center;white-space:pre;font-weight:300}.hero-statement .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}@media(hover:none),(prefers-reduced-motion:reduce){.hero-statement .accent-blue{color:var(--tertiary)}.hero-statement .accent-pink{color:var(--accent-detail)}.hero-statement .reactive-letter{will-change:auto}}</style>
 </head>
 <body><a class="skip" href="#contenido">Saltar al contenido</a><header class="site-header"><div class="wrap header-inner"><a class="wordmark" href="#inicio" aria-label="Aldo Iván, volver al inicio"><img src="assets/aldoivan.svg" alt="" width="132" height="31"></a><nav class="nav" id="nav" aria-label="Navegación principal"><a href="#sobre-mi">Sobre mí</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a></nav><div class="header-actions"><button class="menu-toggle" id="menu-toggle" type="button" aria-controls="nav" aria-expanded="false">Menú</button></div></div></header>
 <main id="contenido"><section class="hero wrap" id="inicio" aria-labelledby="hero-title"><div class="hero-main"><div class="hero-lockup"><div class="hero-signature"><h1 id="hero-title"><img src="assets/aldoivan.svg" alt="Aldo Iván" width="500" height="116"></h1><p>diseño gráfico</p></div><div class="hero-portrait" role="img" aria-label="Personaje alado de Aldo Iván en una animación breve"><img class="hero-animation" src="assets/yo-portada.png" alt="" width="480" height="520"><img class="hero-still" src="assets/yo-portada-fija.png" alt="" width="480" height="520"></div></div><p class="hero-statement"><span class="visually-hidden">Me gusta entender una idea antes de darle forma.</span><span class="statement-line" aria-hidden="true">me gusta entender</span><span class="statement-line" aria-hidden="true">una <span class="accent-blue">idea</span> antes de</span><span class="statement-line" aria-hidden="true">darle <span class="accent-pink">forma</span>.</span></p><p class="hero-copy">Estudio diseño gráfico. Observo, pruebo distintas soluciones y cuido los detalles para que cada proyecto tenga una intención clara.</p><div class="hero-actions"><a class="button button-primary" href="#sobre-mi">Conóceme <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="#proyectos">Ver proyectos</a></div></div><div class="hero-bottom"><span>Portafolio / selección de trabajo</span><span aria-hidden="true">↓</span></div></section>
@@ -30,29 +30,39 @@ const host=document.querySelector('#project-groups');for(const group of groups){
 
 const statement=document.querySelector('.hero-statement');
 if(statement&&matchMedia('(hover: hover)').matches&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
-  const letters=[];
-  for(const line of statement.querySelectorAll('.statement-line')){
+  const lines=[...statement.querySelectorAll('.statement-line')],letters=[];
+  for(const [lineIndex,line] of lines.entries()){
     const walker=document.createTreeWalker(line,NodeFilter.SHOW_TEXT);
     const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);
     for(const node of nodes){const fragment=document.createDocumentFragment();
       for(const char of node.textContent){if(/\s/.test(char)){fragment.append(char);continue}
         const span=document.createElement('span');span.className='reactive-letter';span.textContent=char;fragment.append(span);
-        letters.push({el:span,accent:node.parentElement.classList.contains('accent-blue')?[16,94,249]:node.parentElement.classList.contains('accent-pink')?[239,24,137]:[79,79,79],value:0,x:0,y:0});
+        const blue=node.parentElement.classList.contains('accent-blue'),pink=node.parentElement.classList.contains('accent-pink');
+        letters.push({el:span,lineIndex,isAccent:blue||pink,accent:blue?[16,94,249]:pink?[239,24,137]:[79,79,79],value:0,x:0,y:0});
       }node.replaceWith(fragment);
     }
   }
-  let x=0,y=0,inside=false,frame=0;
-  const measure=()=>{for(const letter of letters){const box=letter.el.getBoundingClientRect();letter.x=box.left+box.width/2;letter.y=box.top+box.height/2}};
+  let x=0,y=0,inside=false,activeLine=-1,frame=0,lineRects=[];
+  const measure=()=>{
+    for(const letter of letters){letter.el.style.width='';letter.el.style.fontWeight='300';letter.el.style.transform='none'}
+    const boxes=letters.map(letter=>letter.el.getBoundingClientRect());
+    letters.forEach((letter,i)=>{const box=boxes[i];letter.el.style.width=`${box.width}px`;letter.x=box.left+box.width/2;letter.y=box.top+box.height/2});
+    lineRects=lines.map(line=>line.getBoundingClientRect());
+  };
   const draw=()=>{frame=0;let unsettled=false;
-    for(const letter of letters){const distance=inside?Math.hypot(x-letter.x,y-letter.y):Infinity;const reach=Math.max(0,1-distance/150);const target=reach*reach*(3-2*reach);letter.value+=(target-letter.value)*.18;
-      if(Math.abs(target-letter.value)>.003)unsettled=true;
-      const value=letter.value;letter.el.style.transform=`translate3d(0,${(-2*value).toFixed(2)}px,0) scale(${(1+.12*value).toFixed(3)})`;
+    for(const letter of letters){const distance=inside&&letter.lineIndex===activeLine?Math.hypot(x-letter.x,y-letter.y):Infinity;
+      const reach=Math.max(0,1-distance/105),target=reach*reach*(3-2*reach)*(letter.isAccent?1:.65);
+      letter.value+=(target-letter.value)*.2;if(Math.abs(target-letter.value)>.003)unsettled=true;
+      const value=letter.value;letter.el.style.transform=`translate3d(0,${(-.8*value).toFixed(2)}px,0) scale(${(1+.06*value).toFixed(3)})`;
+      if(letter.isAccent)letter.el.style.fontWeight=String(Math.round(300+400*value));
       const color=letter.accent.map(channel=>Math.round(12+(channel-12)*value));letter.el.style.color=`rgb(${color.join(',')})`;
     }if(unsettled)frame=requestAnimationFrame(draw);
   };
   const request=()=>{if(!frame)frame=requestAnimationFrame(draw)};
-  statement.addEventListener('pointerenter',event=>{if(event.pointerType==='touch')return;measure();inside=true;x=event.clientX;y=event.clientY;request()});
-  statement.addEventListener('pointermove',event=>{if(event.pointerType==='touch')return;x=event.clientX;y=event.clientY;request()});
+  const move=event=>{if(event.pointerType==='touch')return;x=event.clientX;y=event.clientY;inside=true;
+    activeLine=lineRects.reduce((best,rect,i)=>Math.abs(y-(rect.top+rect.bottom)/2)<Math.abs(y-(lineRects[best].top+lineRects[best].bottom)/2)?i:best,0);request()};
+  statement.addEventListener('pointerenter',event=>{measure();move(event)});
+  statement.addEventListener('pointermove',move);
   statement.addEventListener('pointerleave',()=>{inside=false;request()});
   addEventListener('resize',measure,{passive:true});if(document.fonts)document.fonts.ready.then(measure);
 }
