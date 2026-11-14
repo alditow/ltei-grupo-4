@@ -254,13 +254,13 @@ components:
 
 Mi portafolio presenta mi trabajo como estudiante de diseño gráfico mediante una composición editorial de base clara, una firma tipográfica sensible al cursor y proyectos con imagen dominante. La personalidad está en la relación entre tipografía, personaje y piezas reales, no en acumular efectos. La versión vigente se revisó el 13 de noviembre de 2026.
 
-El recorrido es portada, índice de áreas, Sobre mí, proyectos agrupados y contacto. El índice facilita el acceso directo; Sobre mí aporta contexto antes de revisar el trabajo. No hay selector de tema. La guía visual distingue las reglas del portafolio de los componentes de reserva que todavía no se utilizan.
+El recorrido es portada, Sobre mí, índice de áreas, proyectos agrupados y contacto. Sobre mí aporta contexto antes del índice, que facilita el acceso directo a cada área. No hay selector de tema. La guía visual distingue las reglas del portafolio de los componentes de reserva que todavía no se utilizan.
 
 ## Colors
 
 El fondo es {colors.surface}, la lectura principal {colors.primary} y la secundaria {colors.secondary}. Las tarjetas y el marco de galería usan blanco puro {colors.surface-card}; esa diferencia respecto al fondo delimita los planos sin contornos ni sombras permanentes. El índice de áreas usa {colors.primary} como banda oscura, con tarjetas claras. La franja de marcas conserva el fondo claro.
 
-{colors.tertiary} identifica navegación y acentos de interacción. {colors.accent-graphic} aparece en la cinta «branding» y en recursos gráficos; {colors.accent-detail} destaca «forma». En la frase se admiten azul y rosa porque distinguen idea y realización, sin crear dos acciones de navegación. Los colores de Quest y TipoFilicko pertenecen a esos proyectos y no amplían la paleta de la marca personal.
+{colors.tertiary} identifica navegación y acentos de interacción. {colors.accent-graphic} aparece en la cinta «branding» y en recursos gráficos; «idea» y «forma» usan {colors.tertiary} en la frase de portada. {colors.accent-detail} permanece como acento de detalle de la paleta, sin uso textual en esa frase. Los colores de Quest y TipoFilicko pertenecen a esos proyectos y no amplían la paleta de la marca personal.
 
 Los 16 roles cromáticos corresponden a 11 valores únicos. Los alias on-primary, on-tertiary y on-surface-dark comparten #F4F4F4; on-surface comparte #0C0C0C y on-surface-muted comparte #222222. La guía agrupa los valores repetidos. Surface-dark, surface-raised, surface-muted y text-muted-dark sirven para muestras y estados de componentes, no implican un modo oscuro.
 
@@ -270,19 +270,19 @@ Sobre #F4F4F4, #0C0C0C ofrece 17.79:1, #4F4F4F 7.45:1 y #105EF9 4.78:1. El rosa 
 
 DM Sans variable construye nombre, titulares y controles; Manrope variable sostiene párrafos y metadatos. Se cargan localmente en WOFF2. DM Sans permite pesos 100–1000 y Manrope 200–800. No se usa cursiva en las interacciones actuales.
 
-El nombre «aldo iván» está en minúsculas y peso 200 en reposo. Cada letra responde a la proximidad del cursor; sus pesos máximos progresan 200, 300, 400, 500, 600, 700, 800 y 900. La primera «a» conserva su peso pero participa en color y escala. El crecimiento máximo es 12 % y el desplazamiento vertical 3 px, sin cambiar los espacios reservados. El logotipo vectorial permanece en la navegación; la portada emplea texto real.
+El nombre «aldo iván» está en minúsculas y peso 200 en reposo. Cada letra responde a la proximidad del cursor; sus pesos máximos progresan 200, 300, 400, 500, 600, 700, 800 y 900. La primera «a» conserva su peso pero participa en color y escala. El crecimiento máximo es 12 % y el desplazamiento vertical 3 px, sin cambiar los espacios reservados. Tras la primera interacción y al salir el cursor, el texto pasa suavemente al mismo logotipo vectorial de la navegación; no se repite la reacción.
 
-La frase «me gusta entender una idea antes de darle forma», sin punto final, parte de peso 300. Solo reacciona la fila más cercana al cursor; «idea» y «forma» pueden alcanzar peso 700 y sus acentos azul y rosa. La escala máxima es 6 % y el desplazamiento 0.8 px. El peso y el color se interpolan suavemente. En pantallas táctiles los acentos se muestran sin exigir hover.
+La frase «me gusta entender una idea antes de darle forma», sin punto final, parte de peso 300. Solo reacciona la fila más cercana al cursor; «idea» y «forma» pueden alcanzar peso 700 y ambas con acento azul. La escala máxima es 6 % y el desplazamiento 0.8 px. El peso y el color se interpolan suavemente. En pantallas táctiles los acentos se muestran sin exigir hover.
 
 La escala base de la guía conserva apertura 80/80, sección 48/52, subtítulo 20/26, cuerpo 18/28, navegación 16/20, metadatos 14/20 y notas 12/16 px. No todos estos ejemplos son titulares de la landing. El título de proyecto usa 56/58 px en escritorio y escala desde 32 px en móvil. Los rótulos de grupo usan 28/32 px.
 
-La portada tiene tamaños fluidos para aprovechar la altura: el nombre alcanza 106 px y la frase 70 px; en móvil el nombre varía entre 52 y 78 px y la frase entre 30 y 48 px. El interletrado del nombre es −0.05 em y el de la frase −0.04 em. Estos ajustes propios de portada se distinguen de la escala base; no se afirma que toda pantalla use tamaños fijos. Con zoom de lectura se permite desplazamiento vertical antes que recortar contenido.
+La portada tiene tamaños fluidos para aprovechar la altura: el nombre alcanza aproximadamente 124 px y la frase 70 px; en móvil el nombre varía entre 52 y 78 px y la frase entre 30 y 48 px. El interletrado del nombre es −0.05 em y el de la frase −0.04 em. Estos ajustes propios de portada se distinguen de la escala base; no se afirma que toda pantalla use tamaños fijos. Con zoom de lectura se permite desplazamiento vertical antes que recortar contenido.
 
 ## Layout
 
 El contenedor del portafolio mide como máximo 1296 px incluyendo márgenes internos. Desde 1024 px los márgenes son 48 px: el contenido útil máximo es 1200 px. Por debajo de 600 px son 20 px; entre 600 y 1023 px, 32 px. La separación general entre secciones es 56, 72 y 96 px respectivamente. La base de espaciado es 4 px, con ajustes locales de 10 y 14 px en las miniaturas.
 
-Las 12 columnas de la guía son una referencia editorial, no doce columnas obligatorias en todos los componentes. Los proyectos usan dos zonas proporcionales 42/58 en escritorio, separadas 32 px; por debajo de 1024 px pasan a una columna, con texto antes de la galería. La portada centra verticalmente personaje, nombre, profesión y frase. El índice y la cinta de marcas se extienden a todo el ancho.
+Las 12 columnas de la guía son una referencia editorial, no doce columnas obligatorias en todos los componentes. Los proyectos usan dos zonas proporcionales 42/58 en escritorio, separadas 32 px; por debajo de 1024 px pasan a una columna, con texto antes de la galería. La portada centra verticalmente personaje, nombre, profesión y frase. El índice y las tres cintas divisorias se extienden a todo el ancho.
 
 La imagen principal está a la derecha y la tira de miniaturas se superpone desde la izquierda en la parte baja. Su soporte opaco, del color del fondo, genera el hueco entre planos; no es cristal ni transparencia. Se ven aproximadamente tres miniaturas y fragmentos de las siguientes durante el movimiento. En móvil la tira queda al pie de la imagen. Los marcos mantienen su geometría cuando cambia el contenido.
 
@@ -290,7 +290,7 @@ La imagen principal está a la derecha y la tira de miniaturas se superpone desd
 
 El cristal se reserva a la cabecera: superficie clara al 88 % y desenfoque de 16 px. Las galerías y miniaturas son sólidas. Las flechas y controles de zoom son círculos blancos con una sombra ligera de 0 2px 12px y negro al 12.5 %. Las tarjetas no llevan sombra permanente.
 
-La entrada de secciones combina 28 px de desplazamiento y un fundido de 550 ms, repetido al volver a entrar. El índice de áreas se mueve en bucle hacia la izquierda en ciclos de 20 s; al señalar una tarjeta baja al 40 % de velocidad y desenfoca las demás. Las cintas «branding» y «campañas» se desplazan aproximadamente 75 px/s. Las miniaturas avanzan 85 px/s y bajan a 45 px/s bajo el cursor; el gesto horizontal permite acelerar o retroceder. El foco de teclado detiene la tira de miniaturas.
+La entrada de secciones combina 28 px de desplazamiento y un fundido de 550 ms, repetido al volver a entrar. El índice de áreas se mueve en bucle hacia la izquierda en ciclos de 20 s; al señalar una tarjeta baja al 40 % de velocidad y desenfoca las demás. Las cintas «branding», «campañas» y «motion graphics» se desplazan aproximadamente 75 px/s. Sus letras próximas al cursor aumentan gradualmente de peso y escala, sin mover la retícula. Las miniaturas avanzan 85 px/s y bajan a 45 px/s bajo el cursor; el gesto horizontal permite acelerar o retroceder. El foco de teclado detiene la tira de miniaturas.
 
 El cambio de imagen real usa un fundido de 380 ms, con la imagen entrante ya ajustada al marco. El zoom interpola únicamente la transformación durante 240 ms; el arrastre es directo para evitar retrasos. El control Pausar detiene las cintas, las miniaturas y sustituye el personaje por su imagen fija. La preferencia de movimiento reducido elimina los ciclos y transiciones y mantiene el acceso manual.
 
@@ -308,13 +308,13 @@ Botones generales usan 12 px, muestras de navegación flotante 16 px y controles
 
 **Índice de áreas.** Tres tarjetas enlazan Branding, Campañas y Motion Graphics. Sus copias permiten continuidad visual y se excluyen del orden de tabulación. El gesto horizontal no debe bloquear el desplazamiento vertical de la página.
 
-**Franja de marcas.** Quest y TipoFilicko enlazan a sus módulos de identidad. Antes del grupo de campañas, Macabro y movo enlazan a sus proyectos. Detrás de cada grupo circula «branding» o «campañas» en azul gráfico; un desvanecido del color de fondo de 25 px alrededor del grupo evita que compita con los logotipos. Los recuadros son blancos y sin contorno.
+**Franja de marcas.** Quest y TipoFilicko enlazan a sus módulos de identidad. Antes del grupo de campañas, Macabro y movo enlazan a sus proyectos. Detrás de los grupos de identidad y campañas circula «branding» o «campañas» en azul gráfico; Motion Graphics usa una cinta solo de texto; un desvanecido del color de fondo de 25 px alrededor del grupo evita que compita con los logotipos. Los recuadros son blancos y sin contorno.
 
 **Galería de proyecto.** Nombre, categoría, descripción y alcance acompañan una imagen grande. Quest comienza con su logotipo y tiene cinco mockups; TipoFilicko comienza con su logotipo y tiene nueve; MACABRO FICH comienza con el logotipo entregado y tiene cinco imágenes; movo comienza con su logotipo y tiene cinco imágenes. Las miniaturas, las flechas y el gesto horizontal cambian la imagen. Los mockups admiten zoom de 1 a 2.5 en pasos de 0.25, centrado en la posición reciente del cursor, y arrastre limitado a los bordes. El logo no se amplía. Al cambiar de imagen se restablece el encuadre. Las flechas del teclado permiten desplazar el mockup cuando tiene foco.
 
-**Contenido pendiente.** movo, Tipognoma y Robot Dreams conservan vistas provisionales. No existen páginas de caso separadas ni resultados documentados en ellas. Se incorporarán piezas, explicaciones de participación y créditos cuando estén disponibles.
+**Videos de Motion Graphics.** Tipognoma y Robot Dreams presentan un video 16:9 cada uno, completo y con controles de reproducción y sonido, en un marco redondeado. Las seis entradas ya cuentan con material visual o audiovisual; faltan explicaciones de proceso, participación y créditos. No existen páginas de caso separadas ni resultados documentados.
 
-**Contacto.** Enlace a Instagram @alivann y retorno al inicio. No hay formulario de envío. Botones generales, campos, etiquetas y modal de la guía son ejemplos de reserva; no se presentan como funciones activas del portafolio.
+**Contacto.** Pie negro con enlaces visibles e iconos de Instagram @alivaan__ y correo alditto172@gmail.com; ojo gráfico pequeño abajo a la derecha y retorno al inicio. No hay formulario de envío. Botones generales, campos, etiquetas y modal de la guía son ejemplos de reserva; no se presentan como funciones activas del portafolio.
 
 ## Do's and Don'ts
 
