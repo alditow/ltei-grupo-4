@@ -6,13 +6,13 @@ Presentar mi trabajo como estudiante de diseño gráfico a docentes, equipos cre
 
 ## Recorrido vigente
 
-1. Portada centrada: personaje animado, nombre «aldo iván» que reacciona una vez al cursor y termina como el logotipo vectorial, rótulo «diseñador gráfico» y frase «me gusta entender una idea antes de darle forma», sin punto final. No lleva botones ni párrafo adicional.
+1. Portada centrada: personaje animado, nombre «aldo iván» que reacciona cada vez que el cursor se acerca a sus letras y vuelve al peso extraligero al alejarse, rótulo «diseñador gráfico» y frase «me gusta entender una idea antes de darle forma», sin punto final. No lleva botones ni párrafo adicional.
 2. Sobre mí: formación, prácticas en Injerto y forma de colaborar, antes del índice y los proyectos.
 3. Contenido: índice horizontal de Branding, Campañas y Motion Graphics, con acceso a cada grupo.
-4. Proyectos: franja de dos marcas y seis módulos agrupados en tres áreas.
+4. Trabajo: dos proyectos de Branding, dos de Campañas y dos de Motion Graphics, separados por cintas de área a pantalla completa. Branding y Campañas muestran tarjetas con logos; Motion Graphics se anuncia solo con texto.
 5. Contacto: pie negro con invitación a conversar, Instagram @alivaan__, correo alditto172@gmail.com, ojo gráfico, nombre, año y regreso al inicio.
 
-La cabecera ofrece Sobre mí, Proyectos y Contacto; el nombre vuelve a la portada. En móvil, Menú muestra los mismos destinos. Pausar detiene los movimientos automáticos. La página abre al inicio salvo que se siga un enlace directo. La condición de estudiante se mantiene explícita en Sobre mí; el rótulo profesional no implica una agencia.
+La cabecera ofrece Sobre mí, Proyectos y Contacto; la firma de la izquierda devuelve a la portada. En móvil, Menú muestra los mismos destinos. No hay botón de pausa: cada movimiento responde a la interacción y a la preferencia del sistema por movimiento reducido. La condición de estudiante se mantiene explícita en Sobre mí; el rótulo profesional no implica una agencia.
 
 ## Organización de los proyectos
 
@@ -37,7 +37,7 @@ Cada módulo mantiene categoría, nombre, descripción y alcance junto a una ima
 
 Quest contiene un logo y cinco mockups; TipoFilicko un logo y nueve mockups; MACABRO FICH empieza con el logotipo entregado y muestra cinco imágenes; movo comienza con su logotipo y cinco imágenes. Los cuatro empiezan con el logo completo y centrado. Las miniaturas son previsualizaciones seleccionables, no proyectos distintos. Clic, teclado, flechas y gesto horizontal permiten recorrer las vistas. La transición conserva el tamaño del marco. Los mockups llenan el marco y admiten arrastre y zoom de 1 a 2.5; el logo se conserva completo. Seleccionar otra imagen restablece el encuadre.
 
-Las miniaturas avanzan automáticamente hacia la izquierda, se ralentizan con el cursor y se detienen al recibir foco de teclado o al pulsar Pausar. El trackpad permite avanzar y retroceder sin impedir el desplazamiento vertical fuera de ese gesto. El índice de áreas y las cintas «branding», «campañas» y «motion graphics» también tienen movimiento continuo; las letras de las cintas responden gradualmente a la proximidad del cursor. La preferencia de movimiento reducido mantiene navegación manual y una imagen fija del personaje.
+Las miniaturas avanzan automáticamente hacia la izquierda, se ralentizan con el cursor y se detienen al recibir foco de teclado. El trackpad permite avanzar y retroceder sin impedir el desplazamiento vertical fuera de ese gesto. El índice de áreas y las cintas «branding», «campañas» y «motion graphics» también tienen movimiento continuo; las letras de las cintas responden gradualmente a la proximidad del cursor y permanecen azules. La preferencia de movimiento reducido mantiene navegación manual y una imagen fija del personaje.
 
 Tipognoma y Robot Dreams muestran cada uno un video completo con controles de reproducción y sonido. Sus marcos redondeados respetan la proporción 16:9. Los cuatro proyectos de Branding y Campañas muestran imágenes reales.
 

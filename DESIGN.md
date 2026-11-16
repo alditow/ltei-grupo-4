@@ -15,7 +15,7 @@ colors:
 typography:
   hero-name:
     fontFamily: DM Sans
-    fontSize: 106px
+    fontSize: 124px
     fontWeight: 200
     lineHeight: 0.95
     letterSpacing: "-0.05em"
