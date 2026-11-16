@@ -1,60 +1,85 @@
-# Arquitectura del portafolio de Aldo Iván
+# Arquitectura de información de mi portafolio
 
-## Objetivo y público
+## Propósito y público
 
-Presentar mi trabajo como estudiante de diseño gráfico a docentes, equipos creativos y posibles colaboradores. Las imágenes permiten revisar la ejecución; las descripciones aclaran el alcance de cada propuesta. La página no debe atribuirme resultados o encargos que no estén confirmados.
+Mi portafolio presenta una selección de trabajo como estudiante de diseño gráfico. Está dirigido a docentes, equipos creativos y personas interesadas en colaborar conmigo. Su objetivo es mostrar qué tipo de proyectos desarrollo, cómo se ven sus aplicaciones y cómo pueden contactarme.
 
-## Recorrido vigente
+La página no pretende sustituir un CV curricular detallado. Incluye una presentación personal breve y da prioridad a los trabajos. Cuando una pieza es una propuesta académica o un trabajo colaborativo, esa condición debe quedar clara.
 
-1. Portada centrada: personaje animado, nombre «aldo iván» que reacciona cada vez que el cursor se acerca a sus letras y vuelve al peso extraligero al alejarse, rótulo «diseñador gráfico» y frase «me gusta entender una idea antes de darle forma», sin punto final. No lleva botones ni párrafo adicional.
-2. Sobre mí: formación, prácticas en Injerto y forma de colaborar, antes del índice y los proyectos.
-3. Contenido: índice horizontal de Branding, Campañas y Motion Graphics, con acceso a cada grupo.
-4. Trabajo: dos proyectos de Branding, dos de Campañas y dos de Motion Graphics, separados por cintas de área a pantalla completa. Branding y Campañas muestran tarjetas con logos; Motion Graphics se anuncia solo con texto.
-5. Contacto: pie negro con invitación a conversar, Instagram @alivaan__, correo alditto172@gmail.com, ojo gráfico, nombre, año y regreso al inicio.
+## 1 · Estructura general y navegación
 
-La cabecera ofrece Sobre mí, Proyectos y Contacto; la firma de la izquierda devuelve a la portada. En móvil, Menú muestra los mismos destinos. No hay botón de pausa: cada movimiento responde a la interacción y a la preferencia del sistema por movimiento reducido. La condición de estudiante se mantiene explícita en Sobre mí; el rótulo profesional no implica una agencia.
+El portafolio es una página única. Su recorrido tiene este orden: presentación, Sobre mí, Contenido, Branding, Campañas, Motion Graphics y Contacto. Primero digo quién soy y qué me interesa; después ofrezco un índice para explorar las áreas y, finalmente, muestro los trabajos.
 
-## Organización de los proyectos
+La cabecera contiene mi firma a la izquierda y tres enlaces: Sobre mí, Proyectos y Contacto. La firma devuelve al inicio. En móvil, un menú conserva esos mismos destinos. Los enlaces llevan a secciones de esta página; no anuncian páginas de proyecto que todavía no existen.
 
-### Branding
+## 2 · Presentación
 
-- **Quest Diagnostics:** propuesta de rediseño de identidad visual para el laboratorio. El caso presentará diagnóstico visual, idea de cambio y aplicaciones. Debe identificarse como propuesta, sin insinuar relación oficial.
-- **TipoFilicko:** identidad visual para un evento dedicado a Louise Fili y Zuzana Licko. El caso explicará cómo el concepto se traduce en tipografía, composición y piezas.
+La primera pantalla reúne mi personaje, mi nombre, el rótulo «diseñador gráfico» y la frase «me gusta entender una idea antes de darle forma». Esa frase resume mi forma de abordar un proyecto y prepara la lectura de lo que viene después.
 
-### Campañas
+La composición está centrada y funciona como una presentación, no como una lista de datos. Por eso no incluye un párrafo extenso ni botones adicionales. El personaje es una expresión de mi identidad personal; no se presenta como trabajo para un cliente.
 
-- **MACABRO FICH:** campaña de comunicación para Macabro, Festival Internacional de Cine de Horror. El caso expondrá idea, tono y piezas de difusión.
-- **movo:** campaña para posicionar un producto nuevo. El caso definirá producto, público y propuesta de comunicación.
+## 3 · Sobre mí
 
-### Motion Graphics
+Esta sección aparece antes de los proyectos para dar contexto a mi trabajo. Explico que soy estudiante de séptimo semestre de diseño gráfico y que realizo mis prácticas profesionales en Injerto.
 
-- **Tipognoma:** reel tipográfico para una casa tipográfica ficticia. El caso enseñará ritmo, secuencia y decisiones de animación.
-- **Robot Dreams:** proyecto colaborativo de animación de créditos para la película. El caso distinguirá mi contribución de las decisiones del equipo.
+También indico que me interesa participar en proyectos de identidad, comunicación visual y movimiento. El texto es breve porque los trabajos son la evidencia principal de lo que puedo aportar. Un ojo gráfico acompaña la sección como elemento visual, sin añadir información necesaria para comprenderla.
 
-## Presentación e interacción
+## 4 · Contenido
 
-Cada módulo mantiene categoría, nombre, descripción y alcance junto a una imagen dominante. En escritorio el texto ocupa la izquierda y la imagen la derecha. Una tira de miniaturas cruza el borde inferior izquierdo con un soporte opaco del color del fondo. En móvil el texto precede a la galería. La franja de Branding enlaza Quest y TipoFilicko. Antes de Campañas, otra franja con la palabra «campañas» en movimiento enlaza MACABRO FICH y movo mediante sus logos. Antes de Motion Graphics, una tercera franja muestra solo texto animado. Estas franjas son índices de proyectos, no listas de clientes.
+Después de Sobre mí aparece un índice con tres entradas: Branding, Campañas y Motion Graphics. Cada tarjeta lleva directamente al grupo correspondiente.
 
-Quest contiene un logo y cinco mockups; TipoFilicko un logo y nueve mockups; MACABRO FICH empieza con el logotipo entregado y muestra cinco imágenes; movo comienza con su logotipo y cinco imágenes. Los cuatro empiezan con el logo completo y centrado. Las miniaturas son previsualizaciones seleccionables, no proyectos distintos. Clic, teclado, flechas y gesto horizontal permiten recorrer las vistas. La transición conserva el tamaño del marco. Los mockups llenan el marco y admiten arrastre y zoom de 1 a 2.5; el logo se conserva completo. Seleccionar otra imagen restablece el encuadre.
+Este índice ayuda a elegir un recorrido sin obligar a revisar todos los trabajos en orden. Las tarjetas se desplazan horizontalmente y también pueden recorrerse de forma manual. El movimiento indica que hay más opciones fuera del área visible, pero no impide seleccionar ninguna.
 
-Las miniaturas avanzan automáticamente hacia la izquierda, se ralentizan con el cursor y se detienen al recibir foco de teclado. El trackpad permite avanzar y retroceder sin impedir el desplazamiento vertical fuera de ese gesto. El índice de áreas y las cintas «branding», «campañas» y «motion graphics» también tienen movimiento continuo; las letras de las cintas responden gradualmente a la proximidad del cursor y permanecen azules. La preferencia de movimiento reducido mantiene navegación manual y una imagen fija del personaje.
+## 5 · Presentación de los trabajos
 
-Tipognoma y Robot Dreams muestran cada uno un video completo con controles de reproducción y sonido. Sus marcos redondeados respetan la proporción 16:9. Los cuatro proyectos de Branding y Campañas muestran imágenes reales.
+Los seis trabajos se agrupan por área. Cada entrada mantiene la misma estructura de información: categoría y número, nombre, descripción breve y alcance. Así puedo presentar proyectos distintos sin cambiar la forma en que se leen.
 
-## Sobre mí y contacto
+En los proyectos con varias imágenes, una vista principal muestra la pieza seleccionada. Debajo aparece una tira de miniaturas que permite cambiarla. Las miniaturas representan vistas del mismo proyecto, no proyectos independientes. También se pueden recorrer con flechas y desplazamiento horizontal.
 
-Soy estudiante de séptimo semestre de diseño gráfico y realizo mis prácticas profesionales en Injerto. Me interesa colaborar en identidad, comunicación visual y movimiento. El personaje personal identifica al autor únicamente en la portada; no cuenta como proyecto ni como marca de cliente.
+Las imágenes muestran el resultado visual. Las descripciones aclaran qué se propuso o realizó, pero no atribuyen resultados comerciales, relaciones oficiales ni decisiones individuales que no estén documentadas.
 
-El pie negro reúne Instagram @alivaan__ y el correo alditto172@gmail.com, ambos enlazados mediante iconos y texto legible. El ojo gráfico se ubica abajo a la derecha. No hay teléfono ni formulario.
+## 6 · Branding
 
-## Adaptación y accesibilidad
+Una cinta con la palabra «branding» introduce esta área. Después aparecen dos trabajos:
 
-Se conserva el orden de contenido en todos los tamaños. Por debajo de 1024 px los módulos pasan a una columna. La portada ajusta sus tamaños a la altura disponible; si el usuario amplía el texto, debe poder desplazarse sin perder contenido. La base es clara, sin selector de tema.
+- Quest Diagnostics. Propuesta de rediseño de identidad visual para un laboratorio. Se presenta como propuesta conceptual. Su primera vista es el logotipo y las siguientes muestran aplicaciones de la identidad.
 
-Los controles tienen nombres accesibles y foco visible. Las miniaturas informan cuál está seleccionada y el cambio de vista se anuncia sin interrumpir la lectura. Los controles de galería miden 38 px; el menú tiene 44 px de alto. No se afirma que todos los controles midan 44 px. Las animaciones no son necesarias para acceder a la información.
+- TipoFilicko. Identidad visual para un evento dedicado a Louise Fili y Zuzana Licko. Comienza con el logotipo y continúa con piezas y aplicaciones del sistema.
 
-## Desarrollo pendiente
+En ambos casos, la secuencia de imágenes permite pasar de la identidad principal a sus usos. La página muestra esas piezas visuales sin afirmar que se trate de encargos oficiales.
 
-La página actual es una landing de una sola página. No hay enlaces a páginas de caso inexistentes. Cada futuro caso deberá explicar contexto, problema, concepto, decisiones, aplicaciones, participación y créditos, con resultados únicamente cuando sean verificables. En Robot Dreams debe especificarse la contribución individual. En propuestas académicas se mantendrá esa identificación.
+## 7 · Campañas
 
-Las seis entradas ya tienen material visual o audiovisual. Antes de la entrega académica final faltan explicaciones de proceso, participación y créditos; los mockups y videos por sí solos no demuestran el razonamiento de diseño.
+Una segunda cinta introduce Campañas. Esta área contiene:
+
+- MACABRO FICH. Campaña de comunicación para un festival internacional de cine de horror. La primera vista presenta el logotipo y las siguientes muestran piezas de difusión.
+
+- movo. Campaña para posicionar un producto nuevo, desde la definición de su público hasta la propuesta de comunicación. La galería comienza con el logotipo y sigue con aplicaciones.
+
+La organización de ambos trabajos permite reconocer primero la identidad de la campaña y después revisar cómo se aplica. Cada entrada conserva su propia descripción y sus imágenes, sin mezclar piezas entre proyectos.
+
+## 8 · Motion Graphics
+
+La cinta «motion graphics» marca el paso a trabajos cuyo resultado principal está en movimiento. En esta área no hay tarjetas de logotipos para elegir proyectos.
+
+- Tipognoma. Reel tipográfico para una casa tipográfica ficticia.
+
+- Robot Dreams. Animación colaborativa de créditos. La página identifica el carácter colectivo del trabajo; mi contribución individual deberá explicarse cuando se desarrolle el caso completo.
+
+Cada proyecto muestra una pieza audiovisual en su propio marco, con controles de reproducción. El nombre, la descripción y el alcance permiten entender qué se está viendo antes de reproducirla.
+
+## 9 · Contacto y cierre
+
+La página termina con una invitación a conversar sobre proyectos y colaboraciones. Ofrezco dos vías de contacto visibles: Instagram, @alivaan__, y correo, alditto172@gmail.com. Cada enlace combina icono y texto para que su destino sea claro.
+
+El pie incluye mi nombre, el año y un enlace para volver al inicio. El ojo pequeño de la esquina inferior derecha cierra visualmente el recorrido. No se muestra teléfono ni formulario porque no forman parte de las opciones de contacto actuales.
+
+## Adaptación y acceso al contenido
+
+El orden de las secciones se conserva en todos los tamaños de pantalla. En móvil, la información de cada trabajo aparece antes de su imagen y las miniaturas mantienen su recorrido horizontal. En escritorio, texto e imagen se presentan uno junto al otro.
+
+Los enlaces y controles pueden utilizarse con teclado y muestran cuál está seleccionado. Si una persona prefiere menos movimiento, puede seguir accediendo manualmente al índice y a las galerías. Ninguna animación es necesaria para comprender el contenido o llegar al contacto.
+
+## Criterio para futuras ampliaciones
+
+La página actual muestra seis trabajos mediante piezas visuales, descripciones breves y su alcance. Si más adelante añado páginas de caso, cada una deberá explicar contexto, problema, concepto, decisiones, participación y créditos. Los resultados solo se incluirán cuando puedan comprobarse. Esta ampliación puede profundizar el portafolio sin cambiar el recorrido principal que ya existe.
