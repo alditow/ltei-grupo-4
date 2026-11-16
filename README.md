@@ -1,13 +1,15 @@
-# Portafolio de Aldo Iván
+# Portafolio de Aldo Gutiérrez
 
-Portafolio de diseño gráfico, identidad y movimiento. La página principal está en `index.html`; `design.html` muestra el sistema visual.
+Portafolio de diseño gráfico de Aldo Gutiérrez. Reúne una presentación personal y trabajos de branding, campañas y motion graphics. El repositorio incluye la guía del sistema visual y la arquitectura de información que organizan el portafolio.
 
-Quest Diagnostics, TipoFilicko, MACABRO FICH y movo tienen galerías reales con logo, mockups, miniaturas, zoom y arrastre. Tipognoma y Robot Dreams muestran videos completos con controles.
+## Páginas publicadas
 
-Revisión de coherencia: 13 de noviembre de 2026. La documentación describe la implementación actual y distingue los casos futuros.
+- [Portafolio — index.html](https://alditow.github.io/ltei-grupo-4/)
+- [Sistema de diseño — design.html](https://alditow.github.io/ltei-grupo-4/design.html)
 
-El diseño y la arquitectura de información se documentan en `DESIGN.md`, `CV.md` y los archivos de Word incluidos. `REGISTRO-CAMBIOS.md` recoge las decisiones y cambios para mantenerlos alineados con las páginas.
+## Documentación
 
-Para verlo en el navegador, abre `index.html`.
-
-Sitio publicado: [portafolio](https://alditow.github.io/ltei-grupo-4/) y [sistema de diseño](https://alditow.github.io/ltei-grupo-4/design.html).
+- [Sistema de diseño — DESIGN.md](https://github.com/alditow/ltei-grupo-4/blob/main/DESIGN.md)
+- [Arquitectura de información — CV.md](https://github.com/alditow/ltei-grupo-4/blob/main/CV.md)
+- [Sistema de diseño — PDF](https://github.com/alditow/ltei-grupo-4/blob/main/Diseno-Aldo.pdf)
+- [Arquitectura de información — PDF](https://github.com/alditow/ltei-grupo-4/blob/main/Arquitectura-Aldo.pdf)
