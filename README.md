@@ -2,7 +2,7 @@
 
 **Autor:** Aldo Gutiérrez
 
-Este repositorio reúne mi portafolio de diseño gráfico y la guía visual que lo acompaña. La página presenta quién soy y una selección de trabajos de branding, campañas y motion graphics. La organización del contenido se explica en [CV.md](CV.md); las decisiones de color, tipografía, composición, formas y movimiento se describen en [DESIGN.md](DESIGN.md). Ambas páginas se adaptan a distintos tamaños de pantalla y están construidas con HTML, CSS y JavaScript sin librerías externas.
+Aquí muestro cómo paso de una idea a piezas visuales: quién soy, los proyectos que he desarrollado y las decisiones que dan unidad al sitio. La página presenta quién soy y una selección de trabajos de branding, campañas y motion graphics. La organización del contenido se explica en [CV.md](CV.md); las decisiones de color, tipografía, composición, formas y movimiento se describen en [DESIGN.md](DESIGN.md). Ambas páginas se adaptan a distintos tamaños de pantalla y están construidas con HTML, CSS y JavaScript sin librerías externas.
 
 ## Páginas publicadas
 
