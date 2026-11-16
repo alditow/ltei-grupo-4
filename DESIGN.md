@@ -1,30 +1,30 @@
 ---
-version: alpha
-name: Aldo Iván — Sistema de diseño del portafolio
-description: Portafolio claro de composición editorial, tipografía variable y acentos azules.
+version: "2.0"
+name: Aldo Iván — Sistema de diseño
+summary: Composición editorial clara, tipografía variable y movimiento que guía la exploración.
 colors:
   primary: "#0C0C0C"
   on-primary: "#F4F4F4"
   secondary: "#4F4F4F"
-  tertiary: "#105EF9"
-  on-tertiary: "#F4F4F4"
   surface: "#F4F4F4"
   surface-card: "#FFFFFF"
-  on-surface: "#0C0C0C"
+  on-surface: "{colors.primary}"
+  tertiary: "#105EF9"
+  on-tertiary: "#F4F4F4"
   accent-graphic: "#0000F4"
 typography:
   hero-name:
     fontFamily: DM Sans
-    fontSize: 124px
+    fontSize: 106px
     fontWeight: 200
-    lineHeight: 118px
-    letterSpacing: -6px
+    lineHeight: 0.95
+    letterSpacing: "-0.05em"
   hero-statement:
     fontFamily: DM Sans
     fontSize: 70px
     fontWeight: 300
-    lineHeight: 74px
-    letterSpacing: -2.8px
+    lineHeight: 1
+    letterSpacing: "-0.04em"
   section:
     fontFamily: DM Sans
     fontSize: 48px
@@ -42,13 +42,16 @@ typography:
     fontSize: 16px
     fontWeight: 400
     lineHeight: 25px
-    letterSpacing: 0px
+  navigation:
+    fontFamily: DM Sans
+    fontSize: 16px
+    fontWeight: 500
+    lineHeight: 20px
   meta:
     fontFamily: Manrope
     fontSize: 14px
     fontWeight: 400
     lineHeight: 20px
-    letterSpacing: 0px
 spacing:
   base: 4px
   xs: 8px
@@ -58,10 +61,10 @@ spacing:
   xl: 32px
   section-mobile: 56px
   section-tablet: 72px
-  section: 96px
+  section-desktop: 96px
   margin-mobile: 20px
   margin-tablet: 32px
-  margin: 48px
+  margin-desktop: 48px
 rounded:
   sm: 4px
   md: 12px
@@ -85,56 +88,57 @@ components:
     size: 38px
   focus:
     color: "{colors.tertiary}"
+    width: 3px
 ---
 
 ## Overview
 
-Este sistema describe la versión publicada del portafolio. El recorrido es portada, Sobre mí, índice de áreas, seis proyectos y contacto. La base es clara; Contenido y el pie usan negro. El personaje, la firma tipográfica y las piezas de cada proyecto dan identidad a la página.
+La identidad parte de observar, comprender y dar forma. La composición editorial mantiene una lectura clara; la tipografía variable aporta personalidad y el movimiento indica que hay más contenido por explorar. El recorrido del portafolio es presentación centrada, Sobre mí, índice de áreas, trabajos y contacto. Solo existe tema claro. Las obras mantienen sus propios colores dentro de sus imágenes; la interfaz conserva su paleta.
 
 ## Colors
 
-La página usa {colors.surface} como fondo, {colors.primary} para lectura principal y {colors.secondary} para texto secundario. Los marcos de proyectos y las tarjetas de marcas son blanco puro {colors.surface-card}. Contenido y el pie usan {colors.primary} con {colors.on-primary}. El azul {colors.tertiary} señala enlaces, estados de foco y las palabras «idea» y «forma»; {colors.accent-graphic} colorea las tres cintas divisorias. Los colores propios de los proyectos aparecen dentro de sus imágenes y no son nuevos colores de la interfaz. La identidad del portafolio no usa rosa.
+{colors.surface} cubre la página. {colors.surface-card} separa tarjetas y marcos de imagen. {colors.primary} es tinta principal y fondo de la franja Contenido y del pie; {colors.on-primary} se usa sobre esas áreas. {colors.secondary} corresponde a lectura secundaria. {colors.tertiary} marca enlaces, foco, etiquetas y «idea» y «forma». {colors.accent-graphic} se reserva para el texto de las cintas divisorias. Un área no acumula varios acentos.
 
-El texto principal sobre fondo claro y el texto claro sobre negro superan WCAG AA. El azul de acción sobre {colors.surface} ofrece aproximadamente 4.78:1. Los enlaces sobre negro se muestran claros y subrayados.
+Los pares de lectura normal superan 4.5:1: primary/surface ≈17.8:1; secondary/surface ≈7.45:1; tertiary/surface ≈4.78:1; on-primary/primary ≈17.8:1. El color de las obras no se adopta como token de la interfaz. No hay rosa en la paleta vigente.
 
 ## Typography
 
-DM Sans variable construye nombre, titulares, navegación y controles; Manrope variable sostiene los párrafos y metadatos. Ambas fuentes se sirven localmente en WOFF2. La firma «aldo iván» comienza en peso 200. Durante la primera interacción cada letra se acerca a un peso progresivo, de 200 a 900; al salir el cursor se transforma en el mismo logotipo vectorial de la cabecera y ya no repite el efecto. La frase «me gusta entender una idea antes de darle forma» reacciona por letra a la proximidad del cursor, manteniendo cada fila independiente. «idea» y «forma» comparten azul.
+DM Sans variable en WOFF2 construye firma, títulos, navegación y controles; Manrope variable en WOFF2 sostiene párrafos y metadatos. La firma comienza en peso 200 y cada letra reacciona a la cercanía del cursor hacia un peso propio progresivo de 200 a 900; vuelve a peso 200 al alejarse y puede repetirse. No se sustituye permanentemente por el logotipo. La frase «me gusta entender una idea antes de darle forma» tiene tres líneas; «idea» y «forma» son azules y reaccionan por letra y por línea sin mover la retícula.
 
-Los títulos de sección como «Sobre mí» y «Contenido» comparten jerarquía DM Sans 700. Los nombres de proyectos usan 56/58 px en escritorio y se reducen en móvil. Los tamaños de la portada son fluidos para caber en la altura visible.
+Escala de referencia en escritorio: firma hasta 106 px con interlineado .95 y espaciado −.05em, ajustada también a la altura de pantalla; frase hasta 70 px con espaciado −.04em; sección 48/52 px, peso 700; título de trabajo 56/58 px, peso 700; cuerpo Manrope 16/25 px; navegación DM Sans 16/20 px, peso 500; metadatos Manrope 14/20 px. El rótulo «diseñador gráfico» es DM Sans 500 y crece hasta 20 px. En móvil la firma usa 52–78 px según altura disponible, la frase 30–48 px, los títulos de sección 32/36 px y los de trabajo parten de 32 px. El contenido esencial nunca se presenta en la nota de 12 px.
 
 ## Layout
 
-El contenedor mide como máximo 1296 px, incluidos sus márgenes internos. El margen lateral es de 20 px en móvil, 32 px en tableta y 48 px desde 1024 px. Los proyectos tienen texto a la izquierda e imagen a la derecha en escritorio, con proporción aproximada 42/58; bajo 1024 px pasan a una columna. Sobre mí alinea su texto con el margen general y coloca un ojo decorativo a la derecha. El índice de áreas y los divisores ocupan todo el ancho. Las miniaturas llegan al borde izquierdo de la pantalla sin provocar desplazamiento horizontal de la página.
+El contenedor máximo mide 1296 px incluyendo sus márgenes internos. Los márgenes son 20 px bajo 600 px, 32 px desde 600 px y 48 px desde 1024 px. La separación principal entre secciones es de 56, 72 y 96 px en esos mismos rangos. La portada centra personaje sin marco, firma, oficio y frase dentro de la altura visible. Sobre mí alinea la lectura al margen y sitúa un ojo decorativo a la derecha.
+
+El índice de áreas y los divisores se extienden a todo el ancho. Cada trabajo dispone texto a la izquierda y una imagen principal a la derecha, aproximadamente 42/58 en escritorio; bajo 1024 px pasa a una columna. Una tira horizontal de vistas pequeñas se superpone en el borde inferior de la composición sin dejar un hueco transparente. Las miniaturas pueden alcanzar el borde izquierdo de la pantalla; el documento no debe desplazarse horizontalmente. La selección muestra la imagen en el marco grande y conserva visibles las otras vistas.
 
 ## Elevation & Depth
 
-La profundidad proviene del contraste entre fondo claro, tarjetas blancas y bandas negras. Las tarjetas no llevan sombras permanentes ni efecto cristal. Solo la cabecera usa una superficie clara translúcida con desenfoque de 16 px para mantener legibilidad al desplazarse; los controles circulares de galería tienen una sombra ligera. Las secciones entran con un fundido y desplazamiento corto al cruzar el área visible.
+La profundidad se construye con fondo gris claro, tarjetas blancas y franjas negras. Los marcos son superficies sólidas, sin cristal ni sombras permanentes. La cabecera translúcida usa desenfoque de 16 px para conservar legibilidad al desplazarse. Los controles circulares sobre imágenes admiten sombra leve; la tarjeta activa del índice gana una sombra temporal para distinguir el primer plano. Las secciones aparecen con un desplazamiento y fundido corto al entrar en el área visible, y repiten la reacción al volver a entrar.
 
-Las cintas «branding», «campañas» y «motion graphics» avanzan continuamente de derecha a izquierda. Sus letras aumentan de peso y tamaño según la cercanía del cursor. El índice y las miniaturas también avanzan automáticamente y aceptan interacción manual; Pausar y la preferencia de movimiento reducido detienen los ciclos.
+### Composición y movimiento
+
+Las cintas «branding», «campañas» y «motion graphics» cruzan el ancho completo y avanzan de derecha a izquierda en ciclo continuo. Las letras aumentan suavemente su peso y tamaño según la distancia al cursor sin alterar la posición de las demás. La firma y la frase también reaccionan letra por letra; la frase limita el efecto a la línea próxima. El índice de áreas y las miniaturas se desplazan automáticamente y admiten recorrido manual con trackpad. El foco y la interacción detienen o ralentizan el índice y las miniaturas cuando corresponde; las cintas siguen avanzando mientras reaccionan al cursor. La preferencia del sistema por movimiento reducido detiene los ciclos y deja accesibles las opciones manuales. La cabecera no muestra un botón de pausa.
 
 ## Shapes
 
-Los marcos de imágenes, miniaturas y videos usan {rounded.xl}. Las tarjetas de marcas son blancas y de esquinas redondeadas; no llevan contorno. Los controles de galería son círculos de 38 px. El personaje de portada aparece sin recuadro. El material visual de cada proyecto conserva su color original.
+Los marcos grandes de imagen, las miniaturas y las tarjetas usan {rounded.xl}, equivalente a 20 px. Los controles de galería son círculos de 38 px con {rounded.full}; los estados deshabilitados mantienen su forma. El personaje de portada no tiene recuadro. Las imágenes llenan el marco; cuando el recorte deja fuera contenido, el usuario puede ampliar y arrastrar la imagen dentro del mismo marco. Las tarjetas no cambian de radio entre estados.
 
 ## Components
 
-**Portada.** Personaje animado arriba, firma «aldo iván», rótulo «diseñador gráfico» y frase en tres líneas. La firma pasa una sola vez al logo vectorial. En móvil se ajustan los tamaños para conservar la composición.
+**Cabecera.** Logotipo a la izquierda, tres enlaces centrados horizontal y verticalmente en escritorio y menú accesible en móvil. El foco es visible. No hay botón «Pausar».
 
-**Índice de áreas.** Tres tarjetas enlazan Branding, Campañas y Motion Graphics y se mueven horizontalmente. El trackpad permite recorrerlas manualmente.
+**Portada.** Personaje, firma, oficio y frase forman una composición centrada. El personaje usa una secuencia visual y una imagen fija cuando se reduce el movimiento. La firma vuelve a reaccionar en cada entrada del cursor.
 
-**Divisores.** Branding presenta Quest y TipoFilicko; Campañas presenta Macabro y movo; Motion Graphics solo muestra la cinta de texto. Las tres cintas usan el mismo movimiento y reacción tipográfica.
+**Índice y divisores.** Tres tarjetas enlazan las áreas. La franja Contenido es negra; los divisores de área tienen texto azul en movimiento sobre fondo claro. El área de movimiento usa solo su cinta de texto.
 
-**Galerías.** Quest, TipoFilicko, Macabro y movo empiezan con su logo. Miniaturas, flechas y trackpad cambian la imagen principal. Los mockups se pueden ampliar y arrastrar sin cambiar la forma del marco. Las miniaturas muestran fragmentos de las vistas siguientes y avanzan hacia la izquierda.
+**Presentación de trabajos.** Un bloque de texto contiene área, número, título, descripción y alcance. A la derecha domina un marco blanco de imagen; una tira de miniaturas se superpone abajo y sale hacia el margen izquierdo. No se añaden contornos. La primera vista es el logo en trabajos de identidad o campaña. Flechas, miniaturas y trackpad cambian la vista; zoom y arrastre permiten inspeccionar detalles. La transición entre vistas no deforma la imagen ni el marco. Los trabajos de movimiento usan un marco de reproducción 16:9 con controles.
 
-**Videos.** Tipognoma y Robot Dreams muestran un video 16:9 cada uno, completo dentro de un marco redondeado y con controles de reproducción y sonido.
-
-**Contacto.** El pie negro reúne Instagram @alivaan__, el correo alditto172@gmail.com, regreso al inicio y un ojo pequeño abajo a la derecha. Los enlaces mantienen foco visible.
+**Contacto.** El pie negro reúne invitación a conversar, Instagram, correo, regreso al inicio y un ojo pequeño en la esquina inferior derecha. Los enlaces tienen nombre accesible y foco visible.
 
 ## Do's and Don'ts
 
-- Mantener el orden narrativo y la lectura accesible en móvil y escritorio.
-- Usar azul para interacción y acentos de texto; conservar los colores originales dentro de las piezas de proyecto.
-- Identificar las propuestas académicas y la participación individual; no atribuir encargos o resultados no comprobados.
-- Permitir pausa y movimiento reducido sin perder contenido ni navegación.
-- Evitar rosa, cristal en tarjetas, sombras decorativas, nuevos modos de color y componentes ajenos al portafolio.
+**Sí:** mantener la secuencia narrativa y la retícula; usar azul para interacción y acentos medidos; conservar el color propio dentro de cada obra; respetar los radios y el espacio entre marcos; permitir navegación por teclado, trackpad y movimiento reducido; distinguir con honestidad las propuestas académicas y la colaboración.
+
+**No:** añadir colores a la interfaz por decoración; usar cristal o sombras en tarjetas; estirar imágenes; cambiar tamaños o radios de una tarjeta al interactuar; usar movimiento que impida leer o elegir; confiar solo en color para indicar una acción; describir un control que no existe en la página.
